@@ -98,6 +98,7 @@ li {
 	width:79vw;
 	height: 95vh;
 	margin-top: 8vh;
+	float: right;
 
 }
 iframe{
@@ -216,6 +217,7 @@ aside#sidebar {
 	width:300px;
 	position: relative;
 }
+
 nav#mainnav ul {
 	margin-top: 10vh;
 }
@@ -295,6 +297,11 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 }
 
 
+/*---------------animations-----------------*/
+@keyframes slide-out{
+	from{}
+	to{width: 0px;}
+}
 
 
 
