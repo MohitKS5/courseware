@@ -9,23 +9,42 @@ function transition(){
 		    anime_slide();
 		    count=10;
 		 	$('html, body').animate({scrollTop: $("#sec2").offset().top}, 1000);
-		 	$("#sec2").animate({opacity:1},1300);
+		 	$("#sec2").animate({opacity:0},0);
+		 	$("#sec2").animate({opacity:1},1500);
 		 }else if ($(window).scrollTop() >h) {count=2;
-		 }else  if (($(window).scrollTop() > h-20)&&(($(window).scrollTop() < h+50))&&(count==2)) {
+		 }else  if (($(window).scrollTop() > h-100)&&(($(window).scrollTop() < h+50))&&(count==2)) {
 		 	back_slide();
 		 	count=10;
 		 	$('html, body').animate({scrollTop: $("#sec1").offset().top},1000);
+		 	$("#sec2").animate({opacity:1},0);
 		 	$("#sec2").animate({opacity:0},500);
 
 		 }
 
 
-
 	});
 }
 
+function showall(){
+	
+	$("#menu").click(function(){
+		$("#sec1").animate({opacity:1},0);
+		$("#sec2").animate({opacity:1},0);
+		$("#sec3").animate({opacity:1},0);
+		$("#sec4").animate({opacity:1},0);
+	});
+}
 
 function back_slide(){
+	$("#mainnav").animate({
+		width: "0px",
+		opacity: 0,
+		}, 0);
+	$("#framed").animate({
+		
+		width: "0px",
+		opacity: 0,
+		}, 0);
 	$("#mainnav").animate({
 		width: "20vw",
 		opacity: 1,
@@ -40,6 +59,15 @@ function back_slide(){
 
 function anime_slide(){
 	$("#mainnav").animate({
+		width: "20vw",
+		opacity: 1,
+		}, 0);
+	$("#framed").animate({
+		
+		width: "79vw",
+		opacity: 1,
+		}, 0);
+	$("#mainnav").animate({
 		width: "0px",
 		opacity: 0,
 		}, 1000);
@@ -50,6 +78,7 @@ function anime_slide(){
 		}, 1000);
 
 }
+
 
 $('.smoothscroll').on('click', function (e) {
     
@@ -68,6 +97,7 @@ $('.smoothscroll').on('click', function (e) {
 
 $(document).ready(function() {
 transition();
+showall();
 $("#top").click(function() {
 alert(count);});
 $("#div1").click(function() {
