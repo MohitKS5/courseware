@@ -9,12 +9,13 @@ function transition(){
 		    anime_slide();
 		    count=10;
 		 	$('html, body').animate({scrollTop: $("#sec2").offset().top}, 1000);
-		 
+		 	$("#sec2").animate({opacity:1},1300);
 		 }else if ($(window).scrollTop() >h) {count=2;
 		 }else  if (($(window).scrollTop() > h-20)&&(($(window).scrollTop() < h+50))&&(count==2)) {
 		 	back_slide();
 		 	count=10;
 		 	$('html, body').animate({scrollTop: $("#sec1").offset().top},1000);
+		 	$("#sec2").animate({opacity:0},500);
 
 		 }
 
@@ -40,15 +41,30 @@ function back_slide(){
 function anime_slide(){
 	$("#mainnav").animate({
 		width: "0px",
-		opacity: 1,
+		opacity: 0,
 		}, 1000);
 	$("#framed").animate({
 		
 		width: "0px",
-		opacity: 1,
+		opacity: 0,
 		}, 1000);
 
 }
+
+$('.smoothscroll').on('click', function (e) {
+    
+    e.preventDefault();
+
+    var target = this.hash,
+      $target = $(target);
+
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+      }, 800, 'swing', function () {
+        window.location.hash = target;
+      });
+
+  });
 
 $(document).ready(function() {
 transition();
