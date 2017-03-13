@@ -332,7 +332,7 @@ input:focus {
   padding: 1rem;
 }
 .pad2{
-  padding: 1rem;
+  padding: 0.75rem;
 }
 .INLINE{
   display:inline-block !important;
