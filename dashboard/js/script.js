@@ -4,6 +4,7 @@ var count2=0;
 
 
 /*---------------onscroll animation---------------------*/
+/*sec1 to sec 2 and reverse*/
 function transition(){
 	$(window).scroll(function(){
 		 var h = window.innerHeight;
@@ -29,7 +30,7 @@ function transition(){
 		
 	});
 }
-
+/*sec2 to sec 3 and reverse*/
 function transition2(){
 	$(window).scroll(function(){
 		 var h = window.innerHeight;

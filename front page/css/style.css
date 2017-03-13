@@ -343,13 +343,22 @@ input:focus {
 button {
   float:right;
   height: 10rem;
-  width: 2rem;
+  width: 3rem;
   border: 0rem;
   background: #e74c3c;
   border-radius:7rem;
   margin: 1rem;
   color:white;
   font-size:2rem;
+  opacity: 1;
+}
+button:hover{
+  opacity: 1;
+  background-color: green;
+}
+
+#register{
+  height: 17rem;
 }
 
 
