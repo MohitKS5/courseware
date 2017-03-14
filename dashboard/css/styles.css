@@ -107,7 +107,45 @@ ul#menu a{
 }
 
  
+ /* Parallax base styles
+  --------------------------------------------- */
+#parallax{
+	background-color: blue;
+	z-index: 1000;
+	height: 100vh;
+}
+  .parallax {
+    
+    position:;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+    z-index: 1000;
+    transform: 
+  }
+
+  .parallax_layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .parallax_base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  .parallax_back {
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+  }
+
+
 /*---------special props--------------*/
+
 .cover{
 	width:79vw;
 	height: 95vh;

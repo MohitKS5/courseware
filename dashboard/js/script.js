@@ -33,9 +33,9 @@ function transition(){
 /*sec2 to sec 3 and reverse*/
 function transition2(){
 	$(window).scroll(function(){
-		 var h = window.innerHeight;
-		 var h1= $("#sec2").offset().top+10;
-		 var h2= $("#sec3").offset().top-100;
+		
+		 var h1= $("#sec2").offset().top;
+		 var h2= $("#sec3").offset().top;
 	
 		if ($(window).scrollTop() <h1+1) {count1=0;
 		 }else if (($(window).scrollTop() > h1+1)&&(($(window).scrollTop() < h1+100))&&(count1==0)) {
@@ -129,8 +129,8 @@ $('.smoothscroll').on('click', function (e) {
   });
 
 $(document).ready(function() {
-transition();
-transition2();
+//transition();
+//transition2();
 showall();
 $("#top").click(function() {
 alert(count);});

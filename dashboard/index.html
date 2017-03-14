@@ -16,20 +16,14 @@
  <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 
-<script type="text/javascript" language="javascript">
-// <![CDATA[
-
-
-
-// ]]>
-</script>
 
 
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 </head>
 
-<body>
+<body style="overflow:;">
 
+<section id="mainbody">
 		<section id="sec1">
 			<aside id="sidebar" class="column-left">
 
@@ -50,8 +44,9 @@
   							<div class="mynav grad2" id="mynav">	
   							<ul >
                             	 <li class="selected-item"><a href="index.html">Home</a></li>
-                           		 <li><a href="examples.html">Change Password</a></li>
+                           		 <li><a href="subfiles/change_password.html" target="mainframe">Change Password</a></li>
                            		 <li><a href="#">My files</a></li>
+                           		 <li><a href="../logout.php"> Log out</a></li>
                             	</ul>
                             </div>
 			</nav>
@@ -59,7 +54,7 @@
 			
 
 	   	<div class="framed" id="framed">
-	   		<iframe src="http://home.iitk.ac.in/~himnshu/studentsearch/profile.php?username=vpratap" class="cover" "></iframe>
+	   		<iframe src="http://home.iitk.ac.in/~himnshu/studentsearch/profile.php?username=vpratap" class="cover" id="mainframe" name="mainframe"></iframe>
 		</div>
 	   </section>
 	
@@ -68,20 +63,10 @@
 			<footer class="clear">
 				<p>&copy; 2017 IITK <a class="smoothscroll" href="http://zypopwebtemplates.com/"></a></p>
 			</footer>
-
-		</section>
-		<section id="sec2">
-			<div style="background-color: black; height: 100vh" id="div1">hello</div>
-		</section>
-
-		<section id="sec3">
-			<div style="background-color: red; height: 100vh" id="div2">hello</div>
-		</section>
 		<div class="clear"></div>
 
-	</section>
+</section>
 
 	
-
 </body>
 </html>
