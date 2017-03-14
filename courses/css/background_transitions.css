@@ -141,6 +141,9 @@
   #group4 {
     z-index: 2; /* slide under group 3 and 5 */
   }
+  #group4 .PL_back{
+    
+  }
   #group4 .PL_deep {
     background: rgb(184,223,101);
   }
@@ -156,7 +159,8 @@
     z-index: 2; /* slide under group 5 and 7 */
   }
   #group6 .PL_back {
-    background: rgb(245,235,100);
+     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/book3.jpg');
+  background-size: cover;
   }
 
   #group7 {

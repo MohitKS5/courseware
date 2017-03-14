@@ -77,10 +77,10 @@
         <div class="title">Base Layer</div>
       </div>
       <div class="PL PL_back">
-        <div class="title">Background Layer</div>
+        <div class="title">Background Layer1</div>
       </div>
       <div class="PL PL_deep">
-        <div class="title">Deep Background Layer</div>
+        <div class="title">Deep Background Layer2</div>
       </div>
     </div>
     <div id="group5" class="P_group">
@@ -93,7 +93,7 @@
     </div>
     <div id="group6" class="P_group">
       <div class="PL PL_back">
-        <div class="title">Background Layer</div>
+        <div class="title">MTH101</div>
       </div>
       <div class="PL PL_base">
         <div class="title">Base Layer</div>
