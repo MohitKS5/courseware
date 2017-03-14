@@ -1,0 +1,53 @@
+html{
+	font-size: 10px;
+
+}
+body{
+	font-family: 'Arima Madurai', cursive !important;
+}
+.courses_list{
+	z-index: 1000 !important;
+	position: relative;
+	width: 49%;
+	height: 40rem;
+	margin:10rem 0 0 0;
+	display: inline-block;
+	background-color: transparent;
+
+}
+
+h4{
+	padding-left: 15rem;
+	font-size: 4rem;
+	color: cyan;
+}
+.courses_list ul{
+	margin: 0rem 0 0 25rem; 
+}
+.courses_list li {
+	text-transform: uppercase;
+	background-color:transparent;
+	line-height: 5rem;
+	border-left:1px groove orange;
+	color: lime;
+}
+
+.courses_list a {
+	background-color:rgba(0,0,0,0.5);
+	border:1px solid white;
+	border-radius:3rem;
+	padding: 1rem 5rem 1rem 5rem;
+	text-decoration: none;
+	color: lime;
+}
+.courses_list a:hover{
+	background-color: rgba(0,0,0,1);
+	color: white;
+}
+
+li.separator{
+	line-height: 2rem !important;
+}
+#compulsory_courses{
+	transform: translate(0,-7rem);
+}
