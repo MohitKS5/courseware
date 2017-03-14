@@ -91,7 +91,7 @@ input:focus::-webkit-input-placeholder {
   .submit1{
     background-color: lightgreen !important;
     width: 10rem !important;
-    margin-left: 5rem !important;
+    margin-left: 6rem !important;
   }
   .submit1:hover{
     background-color: #4FD06F !important;
