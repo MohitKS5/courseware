@@ -103,9 +103,11 @@
     text-align: center;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 25%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    font-size: 7rem;
+    color: #98ff35
   }
 
 
@@ -133,7 +135,7 @@
     z-index: 4; /* slide over group 2 and 4 */
   }
   #group3 .PL_base {
-    background: rgb(153,216,101);
+    background: transparent;
   }
 
   #group4 {

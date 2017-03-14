@@ -11,10 +11,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--Set title-->
 <title>Code Buddy</title>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:500%7CFredoka+One%7CPompiere%7CSource+Code+Pro" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 <link rel="stylesheet" href="css/background_transitions.css" type="text/css" />
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
  <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
@@ -28,15 +30,17 @@
  
 
   <div class="parallax">
-    <div id="group1" class="P_group">
+    <div id="group2" class="P_group">
       <div class="PL PL_base">
+        <div class="head1"><span style="font-family: 'Baloo Bhaina', cursive !important; color: orange !important; text-shadow:none;">COURSES</span><BR>Welcome To I Semester Courses</div>
+      </div>
+      <div class="PL PL_back">
         
       </div>
     </div>
-    
-    <div id="group2" class="P_group">
-      <div class="PL PL_base">
-        <section>
+    <div id="group3" class="P_group">
+      <div class="PL PL_fore">
+         <section>
           <div class="courses_list" id="compulsory_courses">
           <h4>Compulsory Courses</h4>
           <ul type="none">
@@ -63,16 +67,9 @@
         </div>
         </section>
       </div>
-      <div class="PL PL_back">
-        <div class="title"></div>
-      </div>
-    </div>
-    <div id="group3" class="P_group">
-      <div class="PL PL_fore">
-        <div class="title">Foreground Layer</div>
-      </div>
       <div class="PL PL_base">
-        <div class="title">Base Layer</div>
+        <div class="title" id="main_list">Main List</div>
+        <div class="title" id="subscript">Navigation</div>
       </div>
     </div>
     <div id="group4" class="P_group">
