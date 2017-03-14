@@ -43,7 +43,7 @@ else
 	echo "logged in";
 	$_SESSION['status'] = "logged-in";
 	$_SESSION['username']=$username;
-	echo "<script>window.location.assign('../dashboard/');</script>";
+	echo "<script>window.location.assign('dashboard/');</script>";
 	die;
 }
 
