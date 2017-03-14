@@ -79,19 +79,19 @@
   <section class="main-sec fullscreen padcenter" id="logsec">
       <div id="tab-signin" class="tab-content">
 <!-- forms -->
-  <form action="">
+  <form action="processlogin.php" method="post">
    <h2><span class="fa fa-users lime-text"></span> Login</h2>
    <button class="submit"><span class="fa fa-lock"></span></button>
   
     <span class="fa fa-user INLINE pad"></span>
-   <input type="text" class="user INLINE" placeholder="ursername"/>
+   <input type="text" class="user INLINE" placeholder="Username" name="username"/>
    <span class="fa fa-key INLINE pad2"></span>
-   <input type="password" class="pass INLINE" placeholder="password"/>
+   <input type="password" class="pass INLINE" placeholder="password" name="password"/>
  </form>
     </div>
 
     <div id="tab-Signup" class="tab-content">
-      <form action="">
+      <form action="">                                                                            <!-- TODO Link to the sign up processor -->
    <h2><span class="fa fa-users lime-text"></span> Sign Up</h2>
    <button class="submit" id="register"><span class="fa fa-lock"></span></button>
   
