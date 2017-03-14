@@ -5,14 +5,14 @@ if(!isset($_SESSION['status']))
 	die ("<script>window.location.assign('../../index.php?errno=restricted');</script>");
 }
 
-if(!isset($_POST['password']))
+if(!isset($_POST['newPass']))
 {
 	die ("");															//TODO the html to return if the user trespasses
 }
 
 $conn = new mysqli("127.0.0.1","root","","codefundo");
 
-$sql = "SELECT * FROM users WHERE username='".$_SESSION['username']."' AND password='".$_POST['password']."'";
+$sql = "SELECT * FROM users WHERE username='".$_SESSION['username']."' AND password='".$_POST['newP']."'";
 
 $res = $conn->query($sql);
 if($res->num_rows==0)
