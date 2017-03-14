@@ -102,8 +102,8 @@ ul#menu{
 }
 ul#menu a{
 	padding: 5px;
-	color: #555;
-	background-color: rgba(255,255,255,0.1);
+	color: cyan;
+	background-color: rgba(255,255,255,0.05);
 	display: inline-block;
 	text-decoration: none;
 }
@@ -180,7 +180,7 @@ iframe{
 	z-index: 1000
 }
 .grad1 {
-    height: 55px;
+   
   background: red; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right,red,orange,yellow,green,blue,indigo,violet);
   background: -o-linear-gradient(right,red,orange,yellow,green,blue,indigo,violet);
@@ -245,11 +245,12 @@ section#body {
 
 /*---------topnav-----------------*/
 .brandname{
+	 height: 2.7rem;
 	font-size: 1.8rem;
 	padding-top: .4rem;
 	padding-left: 3rem;
 	color: white;
-	background-color: black;
+	background-color: #121212;
 
 }
 
@@ -291,7 +292,6 @@ section#content {
 	float:right;
 }
 aside#sidebar {
-	width:300px;
 	position: relative;
 }
 
