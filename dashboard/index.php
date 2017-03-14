@@ -10,108 +10,70 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--Set title-->
 <title>Code Buddy</title>
+<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:500%7CFredoka+One%7CPompiere%7CSource+Code+Pro" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen,projection">
+<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<script type="text/javascript" language="javascript">
+// <![CDATA[
 
 
-<!-- Links to the author of the document -->
-<link rel="author" href="humans.txt">
 
-  
-  <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:500%7CFredoka+One%7CPompiere%7CSource+Code+Pro" rel="stylesheet">
-  <link href="css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection">
-  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen,projection">
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
-  <link href="css/responsive.css" type="text/css" rel="stylesheet" media="screen,projection">
-</head>
-
-<body class="black">
-
-<div class="fa fa-bars topleft dissolve" onclick="openNav()" id="mobile1"></div>
-<script>
-
+// ]]>
 </script>
 
-  
-  <header class="navbar-fixed dissolve" id="header">
-    <nav>
-      <div class="nav-wrapper grey darken-3">
-        <a href="#intro" class="brand-logo white-text smoothscroll">     Course Ware <i class="fa fa-home" aria-hidden="true"></i></a>
-       
-        <ul class="right hide-on-med-and-down tabs2">
-          <li data-id="tab-signin" class="active"><a href="#logsec">Sign In</a></li>
-          <li data-id="tab-Signup"><a href="#logsec">Sign Up</a></li>
-          <li data-id="tab-about"><a href="#logsec">About</a></li>
-          <li data-id="tab-suport"><a href="#logsec">Support</a></li>
-          </ul>
-        <div id="mysidenav" class="sidenav1">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="closebutton">&times;</a>
-          <ul class="tabs2">
-          <li data-id="tab-signin" class="active"><a class="listed" href="#logsec">Sign In</a></li>
-          <li data-id="tab-Signup"><a class="listed" href="#logsec">Sign up</a></li>
-          <li data-id="tab-about"><a class="listed" href="#logsec">About</a></li>
-          <li data-id="tab-suport"><a class="listed" href="#logsec">Suport</a></li>
 
-          </ul>
-        </div>
-      
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+
+    <section id="sec1">
+      <aside id="sidebar" class="column-left">
+        <header>
+          <div class="top horizontal brandname grad1">Courseware<i class="fa fa-home"></i>
+            <ul id="menu" type="none" class="top">
+              <li><a class="smoothscroll" href="#sec1">ME</a></li>
+              <li><a  href="#sec2" class="">Courses</a></li>
+              <li><a class="smoothscroll" href="#sec3">Forum</a></li>
+              <li><a class="smoothscroll" href="#sec4">Screen Reader</a></li>
+            </ul>
+          </div>
+        </header>
+
+        <nav id="mainnav">
+          <div class="mynav grad2" id="mynav">  
+            <ul>
+              <li class="selected-item"><a href="index.html">Home</a></li>
+              <li><a href="examples.html">Change Password</a></li>
+              <li><a href="#">My files</a></li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+
+      <div class="framed" id="framed">
+        <iframe src="http://home.iitk.ac.in/~himnshu/studentsearch/profile.php?username=vpratap" class="cover" "></iframe>
       </div>
-    </nav>
-  </header>
-  <section class="intro fullscreen lime-text text-accent-3" id="intro" >
-    <hgroupa>
-      <h1 class=" main hover-spin" id="me"> COURSE BUDDY <i class="fa fa-book spin" id="anime"></i></h1>
-      <br>
-      <h5 class="hvr-shutter-in-vertical sub"> A Handy course management tool</h5>
-      <br>
-    </hgroup>
-    
-    <div class="scroll-icon">
+     </section>
 
-             <p class="scroll-text">Scroll | click here</p>
-             <a href="#logsec" class="smoothscroll">
-              <div class="mouse"></div>
-             </a>
-            <div class="end-top"></div>
+      <footer class="clear">
+        <p>&copy; 2017 IITK <a class="smoothscroll" href="http://zypopwebtemplates.com/"></a></p>
+      </footer>
+    </section>
 
-          </div> <!-- /scroll-icon -->
+    <section id="sec2">
+      <div style="background-color: black; height: 100vh" id="div1">hello</div>
+    </section>
+
+    <section id="sec3">
+      <div style="background-color: red; height: 100vh" id="div2">hello</div>
+    </section>
+    <div class="clear"></div>
 
   </section>
- 
-  <section class="main-sec fullscreen padcenter" id="logsec">
-      <div id="tab-signin" class="tab-content">
-<!-- forms -->
-  <form action="processlogin.php" method="post">
-   <h2><span class="fa fa-users lime-text"></span> Login</h2>
-   <button class="submit"><span class="fa fa-lock"></span></button>
-  
-    <span class="fa fa-user INLINE pad"></span>
-   <input type="text" class="user INLINE" placeholder="Username" name="username"/>
-   <span class="fa fa-key INLINE pad2"></span>
-   <input type="password" class="pass INLINE" placeholder="Password" name="password"/>
- </form>
-    </div>
 
-    <div id="tab-Signup" class="tab-content">
-      <form action="">                                                                            <!-- TODO Link to the sign up processor -->
-   <h2><span class="fa fa-users lime-text"></span> Sign Up</h2>
-   <button class="submit" id="register"><span class="fa fa-lock"></span></button>
-  
-    <span class="fa fa-university INLINE pad2"></span>
-   <input type="Institute name" class="pass INLINE" placeholder="Institute name"/>
-    <span class="fa fa-user INLINE pad"></span>
-   <input type="text" class="user INLINE" placeholder="ursername"/>
-   <span class="fa fa-key INLINE pad2"></span>
-   <input type="password" class="pass INLINE" placeholder="password"/>
-    </form>
-    </div>
-  </section>
-  <hr class="stylish">
-  
-  
-
-  <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-</body>
-
-
+  </body>
 </html>
