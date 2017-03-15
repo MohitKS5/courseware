@@ -51,7 +51,7 @@ if(!isset($_SESSION['status'])) {
       <nav id="mainnav">
                 <div class="mynav grad2" id="mynav">  
                 <ul >
-                               <li><a href="index.html">Home</a></li>
+                               <li><a href="index.php">Home</a></li>
                                <li><a href="subfiles/change_password.php" target="mainframe">Change Password</a></li>
                                <li><a href="#">My files</a></li>
                                <li><a href="../logout.php"> Log out</a></li>
@@ -62,7 +62,7 @@ if(!isset($_SESSION['status'])) {
       
 
       <div class="framed" id="framed">
-        <iframe src="http://home.iitk.ac.in/~himnshu/studentsearch/profile.php?username=vpratap" class="cover" id="mainframe" name="mainframe"></iframe>
+        <iframe src="http://home.iitk.ac.in/~himnshu/studentsearch/profile.php?username=<?php echo $_SESSION['username'];?>" class="cover" id="mainframe" name="mainframe"></iframe>
     </div>
      </section>
   

@@ -50,6 +50,7 @@ input:focus {
 }
 
 select {
+  font-size: 1rem !important;
   display: block;
   background:transparent;
   border-radius: 3rem;

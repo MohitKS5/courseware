@@ -1,8 +1,8 @@
-<?php
+<!--?php
 
 if(session_status()!=PHP_SESSION_ACTIVE)
   header("location: ../index.php");
-?>
+?-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,6 +24,15 @@ if(session_status()!=PHP_SESSION_ACTIVE)
  <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<script type="text/javascript">
+
+    function scrollto(TO){
+      alert(TO);
+      $('html, body').animate({
+            'scrollTop' : $($(TO)).position().top,
+        });
+    }
+  </script>
 </head>
 
 <body>
@@ -49,7 +58,7 @@ if(session_status()!=PHP_SESSION_ACTIVE)
           <h4>Compulsory Courses</h4>
           <ul type="none">
             <li class="separator">&nbsp</li>
-            <li>-<a href="">mth101</a></li>
+            <li onclick="scrollto('#course1')">-<a>mth101</a></li>
             <li class="separator">&nbsp</li>
             <li>-<a href="">phy103</a></li>
             <li class="separator">&nbsp</li>
@@ -91,7 +100,7 @@ if(session_status()!=PHP_SESSION_ACTIVE)
       <div class="PL PL_fore">
         <div class="title">Foreground Layer2</div>
       </div>
-      <div class="PL PL_base">
+      <div class="PL PL_base" id="course1">
         <div class="title">MTH101</div>
       </div>
     </div>
