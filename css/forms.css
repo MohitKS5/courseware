@@ -12,10 +12,10 @@ h2 {
 
 form {
   position:relative;
-  margin: auto;
-  width: 33rem;
+   width: 33rem;
   height: auto;
   margin-bottom: 50rem;
+  padding: 20px;
 }
 
 input {
@@ -86,12 +86,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 
-.centeralign1{
-  top:50%;
-  transform: translate(0,-50%);
 
-  
-  }
   .submit1{
     background-color: lightgreen !important;
     width: 10rem !important;
@@ -99,4 +94,12 @@ input:focus::-webkit-input-placeholder {
   }
   .submit1:hover{
     background-color: #4FD06F !important;
+  }
+
+  .dark{
+    background-color: rgba(0,0,0,0.6);
+    background-size: cover;
+    width: 100vw;
+    height: 200vh;
+    -webkit-transform: translate(0,-2rem);
   }
