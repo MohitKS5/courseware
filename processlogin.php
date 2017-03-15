@@ -39,8 +39,12 @@ if($res->num_rows!=1)
 else
 {
 	//Set the session variables
+	$row = $res->fetch_array(MYSQL_ASSOC);
 	$_SESSION['status'] = "logged-in";
-	$_SESSION['username']=$username;
+	$_SESSION['username'] = $username;
+	$_SESSION['instituteid'] = $row['instituteid'];
+	$_SESSION['userid'] = $row['userid'];
+	$_SESSION['currsem'] = $row['currsem'];
 	header("Location: dashboard");
 	die;
 }
