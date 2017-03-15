@@ -1,5 +1,7 @@
 <?php
 session_start();
+if(!isset($POST['email']))
+	header("Location: index.php");
 $email = (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL));
 
 $username = false;

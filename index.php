@@ -57,7 +57,34 @@
       </div>
     </nav>
   </header>
+<span id="errmsg" style="display: block; font-size: 5rem; color: red; position: absolute; margin:20rem 0 0 60rem; ">
+ <?php 
+  if(isset($_GET['err']))
+  {
+    switch($_GET['err'])
+    {
+      case "xuser":
+      echo "<span>It seems that the username has already been taken. Please try another.</span>";
+      break;
+      case "xpass":
+      echo "<span>It seems that the password doesnt fulfil the required condtions. Please try another</span>";
+      break;
+      case "xemail":
+      echo "<span>It seems that the email is either invalid or already taken. Please try another.</span>";
+      break;
+      case "restricted":
+      echo "<span>You have to login before you could continue</span>";
+      break;
+      case "userpass":
+      echo "Username or password wrong!";
+      break;
+      default:
+      echo ":-D";
+    }
+  }
 
+  ?>
+</span>
   <section class="intro fullscreen lime-text text-accent-3" id="intro" >
     <hgroupa>
       <h1 class=" main hover-spin" id="me"> COURSE BUDDY <i class="fa fa-book spin" id="anime"></i></h1>
@@ -111,26 +138,7 @@
    <input
     </form>-->
 <form action="signup.php" method="post">  
-  <?php 
-  if(isset($_GET['err']))
-  {
-    switch($_GET['err'])
-    {
-      case "xuser":
-      echo "<span>It seems that the username has already been taken. Please try another.</span>";
-      break;
-      case "xpass":
-      echo "<span>It seems that the password doesnt fulfil the required condtions. Please try another</span>";
-      break;
-      case "xemail":
-      echo "<span>It seems that the email is either invalid or already taken. Please try another.</span>";
-      break;
-      default:
-      echo ":-D";
-    }
-  }
-
-  ?>
+  
   <h2><span class="fa fa-users lime-text"></span> Sign Up</h2>
   <span class="fa fa-user INLINE"></span> 
   <input class="INLINE" type="text" name="name" placeholder="Your name"><br>
