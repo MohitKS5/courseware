@@ -142,7 +142,8 @@
   <input class="INLINE" type="password" name="passwordAgain" placeholder="Your password again"><br>
   <span class="fa fa-envelope INLINE"></span>
   <input type="text" class="INLINE" name="email" placeholder="Your email address" onkeyup="validateEmail(this.value);"> <span id="emailDetails"></span><br>
-  <select  name="institute">
+  <span class="fa fa-university INLINE"></span>
+  <select  name="institute" class="INLINE">
     <?php 
     $conn = new mysqli("127.0.0.1","root","","codefundo");
     $sql = "SELECT instituteid, name FROM institutes";
@@ -155,7 +156,7 @@
     } 
     $conn->close();
     ?>
-  </select>
+  </select><br>
   <span class="INLINE" style="font-size: 1.5rem !important">DOB:</span>
   <input class="INLINE" type="date" name="dob" id="dob">
   <button class="submit" id="register" type="submit" name="I'm in!" disabled="disabled">I'm in!</button>

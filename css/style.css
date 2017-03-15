@@ -152,6 +152,7 @@ blockquote {
 
 /* Stylish hr */
 hr.stylish {
+  position: relative;
   border: none;
   border-bottom: medium double #ffffff;
   border-top: medium double #ffffff;

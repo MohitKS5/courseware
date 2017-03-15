@@ -53,6 +53,8 @@ select {
   display: block;
   background:transparent;
   border-radius: 3rem;
+  width: 22rem;
+  height: 3rem;
 }
 select:focus, select:active, select:hover{
   background:white;

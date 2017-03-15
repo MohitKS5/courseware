@@ -37,7 +37,7 @@ if(!isset($_SESSION['status'])) {
 
       <header>
         
-        <div class="top horizontal brandname">Courseware<i class="fa fa-home"></i>
+        <div class="top horizontal brandname"><a href="#" style="text-decoration: none; color: white;">Courseware</a><i class="fa fa-home"></i>
           
           <ul id="menu" type="none" class="top">
             <li><a class="smoothscroll" href="#sec1">ME</a></li>
