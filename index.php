@@ -93,7 +93,7 @@
     </div>
 
     <div id="tab-Signup" class="tab-content">
-      <!--form action="">                                                                            < TODO Link to the sign up processor
+      <!--form action="">
    
   
     <span class="fa fa-university INLINE pad2"></span>
@@ -110,9 +110,28 @@
 
    <input
     </form>-->
-<form action="" method="post">  
-          <!-- TODO-->
-          <h2><span class="fa fa-users lime-text"></span> Sign Up</h2>
+<form action="signup.php" method="post">  
+  <?php 
+  if(isset($_GET['err']))
+  {
+    switch($_GET['err'])
+    {
+      case "xuser":
+      echo "<span>It seems that the username has already been taken. Please try another.</span>";
+      break;
+      case "xpass":
+      echo "<span>It seems that the password doesnt fulfil the required condtions. Please try another</span>";
+      break;
+      case "xemail":
+      echo "<span>It seems that the email is either invalid or already taken. Please try another.</span>";
+      break;
+      default:
+      echo ":-D";
+    }
+  }
+
+  ?>
+  <h2><span class="fa fa-users lime-text"></span> Sign Up</h2>
   <span class="fa fa-user INLINE"></span> 
   <input class="INLINE" type="text" name="name" placeholder="Your name"><br>
   <span class="fa fa-edit INLINE"></span>
@@ -123,8 +142,19 @@
   <input class="INLINE" type="password" name="passwordAgain" placeholder="Your password again"><br>
   <span class="fa fa-envelope INLINE"></span>
   <input type="text" class="INLINE" name="email" placeholder="Your email address" onkeyup="validateEmail(this.value);"> <span id="emailDetails"></span><br>
-  <select name="institute">
-    <?php  //TODO add php for displaying the institute names ?>
+  <select style="display:block;" name="institute">
+    <?php 
+    $conn = new mysqli("127.0.0.1","root","","codefundo");
+    $sql = "SELECT instituteid, name FROM institutes";
+    $res = $conn->query($sql);
+    for($i=0;$i<$res->num_rows;$i++)
+    {
+      $row = $res->fetch_array(MYSQL_ASSOC);
+
+      echo "<option value=".$row['instituteid'].">".$row['name']."</option>";
+    } 
+    $conn->close();
+    ?>
   </select>
   <span class="INLINE" style="font-size: 1.5rem !important">DOB:</span>
   <input class="INLINE" type="date" name="dob" id="dob">
@@ -135,6 +165,8 @@
 <script>
   var trueResponse = "This username is available";
   var falseResponse = "Sorry! This username is not available";
+  var uname = false;
+  var m = false;
   function checkUsername(username)
   {
     if(username==="")
@@ -148,20 +180,38 @@
       if(this.readyState ===4 && this.status===200) {
         console.log(this.responseText);
         if(this.responseText === "true")
+        {
           $("#usernameDetails").text(trueResponse);
+          uname=true;
+        }
         else
+        {
           $("#usernameDetails").text(falseResponse);
+          uname=false;
+        }
       }
     };
     xmlhttp.open("GET","enq.php?username="+username+"&a=true");
     xmlhttp.send();
+    check();
   }
   function validateEmail(email) {
       var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      if(re.test(email) || email === "")
+      if(re.test(email) || email === "") {
         $("#emailDetails").text("");
-      else
+        m=true;
+      } else {
         $("#emailDetails").text("Please enter a valid email address");
+        m=false;
+      }
+      check();
+  }
+
+  function check() {
+    if(m && uname)
+      $("#register").removeAttr("disabled")
+    else
+      $("#register").attr("disabled","disabled");
   }
 </script>
 
