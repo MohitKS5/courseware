@@ -51,7 +51,7 @@ if(!isset($_SESSION['status'])) {
       <nav id="mainnav">
                 <div class="mynav grad2" id="mynav">  
                 <ul >
-                               <li><a href="index.html">Home</a></li>
+                               <li><a href="index.php">Home</a></li>
                                <li><a href="subfiles/change_password.php" target="mainframe">Change Password</a></li>
                                <li><a href="#">My files</a></li>
                                <li><a href="../logout.php"> Log out</a></li>
