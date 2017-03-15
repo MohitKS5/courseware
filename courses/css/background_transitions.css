@@ -139,14 +139,14 @@
   }
 
   #group4 {
-    z-index: 2; /* slide under group 3 and 5 */
+    z-index: 2;
+    background-color: black; /* slide under group 3 and 5 */
   }
   #group4 .PL_back{
-    
+background-color: black;
   }
   #group4 .PL_deep {
-    background: rgb(184,223,101);
-  }
+     background-color: black !important;
 
   #group5 {
     z-index: 3; /* slide over group 4 and 6 */
@@ -167,7 +167,7 @@
     z-index: 3; /* slide over group 7 */
   }
   #group7 .PL_base {
-    background: rgb(255,241,100);
+    background: black;
   }
 
 
