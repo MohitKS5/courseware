@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Oxygen:400,700);
-
+html{
+	font-size: 20px;
+}
 /** global **/
 body {
 	
@@ -91,20 +93,26 @@ h5 {
 
 ul#menu li {
     display:inline!important;
-    line-height: 7vh;
+    line-height: 2.5rem;
     text-align: center;
-    padding: 0px;
+    padding: -2px;
 }
 ul#menu{
-	margin-left: 70.2vw;
+	margin-left: 53rem;
 }
 ul#menu a{
 	padding: 5px;
-	color: white;
-	background-color: rgba(255,255,255,0.1);
+	color: cyan;
+	background-color: rgba(255,255,255,0.05);
 	display: inline-block;
 	text-decoration: none;
 }
+ul#menu a:hover{
+	background-color: rgba(255,255,255,0.5);
+	color: #000;
+	font-family: 'Arima Madurai'
+}
+
 
  
  /* Parallax base styles
@@ -147,10 +155,11 @@ ul#menu a{
 /*---------special props--------------*/
 
 .cover{
-	width:79vw;
-	height: 95vh;
-	margin-top: 8vh;
+	width:61.5rem;
+	height: 36.5rem;
+	margin-top: 3.2rem;
 	float: right;
+	border:none !important;
 
 }
 iframe{
@@ -163,26 +172,28 @@ iframe{
 
 }
 .framed{
-	float: right;
+	float: left;
 }
 .horizontal{
 	width: 100vw;
-	height: 6vh;
+	height: 2rem;
 	z-index: 1000
 }
 .grad1 {
-    height: 55px;
-    background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Fx 3.6 to 15 */
-    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Standard syntax (must be last) */
+   
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right,red,orange,yellow,green,blue,indigo,violet);
+  background: -o-linear-gradient(right,red,orange,yellow,green,blue,indigo,violet);
+  background: -moz-linear-gradient(right,red,orange,yellow,green,blue,indigo,violet);
+  background: linear-gradient(to left, red,orange,yellow,green,blue,indigo,violet); 
 }
 .grad2 {
     height: 200px;
-    background: -webkit-linear-gradient(left, rgba(0,0,0,0.3), rgba(0,0,0,1.5)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, rgba(0,0,0,0.3), rgba(0,0,0,1.5)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, rgba(0,0,0,0.3), rgba(0,0,0,1.5)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,1.5)); /* Standard syntax (must be last) */
+    opacity: 0.9;
+    background: -webkit-linear-gradient(right,rgba(150,0,0,1.5), rgba(0,0,0,1), rgba(150,0,0,1.5)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right,rgba(150,0,0,1.5), rgba(0,0,0,1), rgba(150,0,0,1.5)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right,rgba(150,0,0,1.5), rgba(0,0,0,1), rgba(150,0,0,1.5)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right,rgba(150,0,0,1.5), rgba(0,0,0,1), rgba(150,0,0,1.5)); /* Standard syntax (must be last) */
 }
 
 
@@ -234,16 +245,17 @@ section#body {
 
 /*---------topnav-----------------*/
 .brandname{
-	font-size: 4vh;
-	padding-top: 1vh;
-	padding-left: 5vw;
+	 height: 2.7rem;
+	font-size: 1.8rem;
+	padding-top: .4rem;
+	padding-left: 3rem;
 	color: white;
-	background-color: #424242;
+	background-color: #121212;
 
 }
 
 .right{
-	margin-left: 60vw;
+	margin-left: 60rem;
 }
 header li{
 	font-family: sans-serif;
@@ -252,7 +264,7 @@ header li{
 
 }
 .navs{
-	margin-left: 10vw;
+	margin-left: 10rem;
 }
 
 /**------------ content+sidebar styles------------- **/
@@ -261,15 +273,15 @@ header li{
 
 .mynav{
 	float: left;
-	height: 67vh;
-	width: 20vw;
+	height: 27rem;
+	width: 15rem;
 	background-color: #edf1f2;
-	font-size: 2vh;
-	padding-top: 30vh;
+	font-size: .8rem;
+	padding-top: 10rem;
 	}
 
 section#content {
-	width:35vw;
+	width:8rem;
 	
 	background-color: #fff;
 }
@@ -280,12 +292,11 @@ section#content {
 	float:right;
 }
 aside#sidebar {
-	width:300px;
 	position: relative;
 }
 
 nav#mainnav ul {
-	margin-top: 10vh;
+	margin-top: 3.2rem;
 }
 
 nav#mainnav li {
@@ -300,12 +311,19 @@ nav#mainnav li.selected-item a:hover {
 	color: #D20000;
 }
 nav#mainnav li a:hover {
-	color:orange;
-
+	color:cyan;
+	font-size: 1rem;
+	font-weight:700;
+	text-decoration:none;
+	text-transform: lowercase;
+}
+nav#mainnav li a:active {
+	color:red;
 	text-decoration:none;
 }
 nav#mainnav li a {
-	color: #ccc;
+	color:#fff;
+	font-family: 'Arima Madurai';
 	display: block;
 	padding: 0px 17px;
 	text-align: center;
