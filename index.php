@@ -150,7 +150,7 @@
   <input class="INLINE" type="password" name="passwordAgain" placeholder="Your password again"><br>
   <span class="fa fa-envelope INLINE"></span>
   <input type="text" class="INLINE" name="email" placeholder="Your email address" onkeyup="validateEmail(this.value);"> <span id="emailDetails"></span><br>
-  <select style="display:block;" name="institute">
+  <select  name="institute">
     <?php 
     $conn = new mysqli("127.0.0.1","root","","codefundo");
     $sql = "SELECT instituteid, name FROM institutes";
