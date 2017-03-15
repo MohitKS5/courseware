@@ -113,15 +113,15 @@
 
 
   /* style the groups
-  _- */
+  _- 
 
   #group1 {
-    z-index: 5; /* slide over group 2 */
+    z-index: 5; /* slide over group 2 
   }
   #group1 .PL_base {
     background: rgb(102,204,102);
   }
-
+*/
   #group2 {
     z-index: 3; /* slide under groups 1 and 3 */
   }
@@ -147,12 +147,17 @@ background-color: black;
   }
   #group4 .PL_deep {
      background-color: black !important;
+   }
 
   #group5 {
     z-index: 3; /* slide over group 4 and 6 */
   }
   #group5 .PL_base {
-    background: rgb(214,229,100);
+    background: transparent;
+  }
+
+  #group5 .PL_fore{
+    background: black !important;
   }
 
   #group6 {

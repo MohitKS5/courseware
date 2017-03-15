@@ -85,15 +85,15 @@
     </div>
     <div id="group5" class="P_group">
       <div class="PL PL_fore">
-        <div class="title">Foreground Layer1</div>
+        <div class="title">Foreground Layer2</div>
       </div>
       <div class="PL PL_base">
-        <div class="title">Base Layer2</div>
+        <div class="title">MTH101</div>
       </div>
     </div>
     <div id="group6" class="P_group">
       <div class="PL PL_back">
-        <div class="title">MTH101</div>
+        <div class="title"></div>
       </div>
       <div class="PL PL_base">
         <div class="title">Base Layer3</div>

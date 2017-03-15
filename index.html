@@ -93,9 +93,8 @@
     </div>
 
     <div id="tab-Signup" class="tab-content">
-      <form action="">                                                                            <!-- TODO Link to the sign up processor -->
-   <h2><span class="fa fa-users lime-text"></span> Sign Up</h2>
-   <button class="submit" id="register"><span class="fa fa-lock"></span></button>
+      <!--form action="">                                                                            < TODO Link to the sign up processor
+   
   
     <span class="fa fa-university INLINE pad2"></span>
 
@@ -110,7 +109,62 @@
    <input type="password" class="pass INLINE" placeholder="password"/>
 
    <input
-    </form>
+    </form>-->
+<form action="" method="post">  
+          <!-- TODO-->
+          <h2><span class="fa fa-users lime-text"></span> Sign Up</h2>
+  <span class="fa fa-user INLINE"></span> 
+  <input class="INLINE" type="text" name="name" placeholder="Your name"><br>
+  <span class="fa fa-edit INLINE"></span>
+  <input class="INLINE" type="text" name="username" placeholder="Your preferred username" onkeyup="checkUsername(this.value);"> <span id="usernameDetails"></span><br>
+  <span class="fa fa-key INLINE"></span>
+  <input class="INLINE" type="password" name="password" placeholder="Your password"><br>
+  <span class="fa fa-key INLINE"></span>
+  <input class="INLINE" type="password" name="passwordAgain" placeholder="Your password again"><br>
+  <span class="fa fa-envelope INLINE"></span>
+  <input type="text" class="INLINE" name="email" placeholder="Your email address" onkeyup="validateEmail(this.value);"> <span id="emailDetails"></span><br>
+  <select name="institute">
+    <?php  //TODO add php for displaying the institute names ?>
+  </select>
+  <span class="INLINE" style="font-size: 1.5rem !important">DOB:</span>
+  <input class="INLINE" type="date" name="dob" id="dob">
+  <button class="submit" id="register" type="submit" name="I'm in!" disabled="disabled">I'm in!</button>
+  </form>
+
+
+<script>
+  var trueResponse = "This username is available";
+  var falseResponse = "Sorry! This username is not available";
+  function checkUsername(username)
+  {
+    if(username==="")
+    {
+      $("#usernameDetails").text("");
+      return;
+    }
+    var xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.onreadystatechange = function() {
+      if(this.readyState ===4 && this.status===200) {
+        console.log(this.responseText);
+        if(this.responseText === "true")
+          $("#usernameDetails").text(trueResponse);
+        else
+          $("#usernameDetails").text(falseResponse);
+      }
+    };
+    xmlhttp.open("GET","enq.php?username="+username+"&a=true");
+    xmlhttp.send();
+  }
+  function validateEmail(email) {
+      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if(re.test(email) || email === "")
+        $("#emailDetails").text("");
+      else
+        $("#emailDetails").text("Please enter a valid email address");
+  }
+</script>
+
     </div>
   </section>
   <hr class="stylish">

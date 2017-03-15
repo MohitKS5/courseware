@@ -2,7 +2,7 @@ f/*---------------------forms----------------------*/
 
 
 h2 {
-  color:rgba(255,255,255,.8) !important;
+  color:rgba(255,255,255,.8);
   margin-left:5rem;
   padding: 2rem;
   font-size: 5rem;
@@ -45,12 +45,13 @@ input:focus {
 }
 .INLINE{
   display:inline-block !important;
-  font-size: 1rem;
+  font-size: 2rem;
   color: orange;
 }
 
 
 button {
+ padding-bottom: 3rem !important;
   float:right;
   height: 10rem;
   width: 3rem;
@@ -68,7 +69,10 @@ button:hover{
 }
 
 #register{
-  height: 17rem;
+  height: 2rem;
+  width: 10rem;
+  float: left;
+  margin-left: 10rem !important;
 }
 
 
