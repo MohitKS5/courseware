@@ -19,6 +19,7 @@
    <link href="responsive.css" type="text/css" rel="stylesheet" media="screen,projection">
 	<title> change passwords</title>
 	<script type="text/javascript">
+
 		function scrollto(){
 			$('html, body').animate({
         		'scrollTop' : $("#chngpassform").position().top
