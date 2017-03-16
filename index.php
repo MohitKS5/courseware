@@ -134,6 +134,8 @@
     $res = $conn->query($sql);
     if($conn->error)
       die("query error");
+    var_dump($conn);
+    var_dump($res);
     echo "etzsxdcfvgtesdrcftvghbj";
     for($i=0;$i<$res->num_rows;$i++)
     {
