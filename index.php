@@ -110,7 +110,7 @@
    <button class="submit"><span class="fa fa-lock"></span></button>
   
     <span class="fa fa-user INLINE pad"></span>
-   <input type="text" class="user INLINE" placeholder="Username" name="username" id="usrnm" />
+   <input type="text" class="user INLINE" placeholder="Username" name="username" />
    <span class="fa fa-key INLINE pad2"></span>
    <input type="password" class="pass INLINE" placeholder="password" name="password"/>
  </form>
@@ -142,7 +142,7 @@
     ?-->
   </select><br>
   <span class="fa fa-edit INLINE"></span>
-  <input class="INLINE" type="text" name="username" placeholder="Your preferred username" onkeyup="checkUsername(this.value);"> <span id="usernameDetails"></span><br>
+  <input class="INLINE" type="text" name="username" placeholder="Your preferred username" id="usrnm" onkeyup="checkUsername(this.value);"> <span id="usernameDetails"></span><br>
   <span class="fa fa-key INLINE"></span>
   <input class="INLINE" type="password" name="password" placeholder="Your password"><br>
   <span class="fa fa-key INLINE"></span>
@@ -150,7 +150,7 @@
   <span class="fa fa-envelope INLINE"></span>
   <input type="text" class="INLINE" name="email" placeholder="Your email address" onkeyup="validateEmail(this.value);"> <span id="emailDetails"></span><br>
   <span class="INLINE" style="font-size: 1.5rem !important">DOB:</span>
-  <input class="INLINE" type="date" name="dob" id="dob">
+  <input class="INLINE" type="date" name="dob" id="dob" placeholder="dd-mm-yy">
   <button class="submit" id="register" type="submit" name="I'm in!" disabled="disabled">I'm in!</button>
   </form>
 
@@ -218,7 +218,7 @@
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   
- 
+
 
 </body>
 

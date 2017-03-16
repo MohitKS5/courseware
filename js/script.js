@@ -1,3 +1,4 @@
+var iitk="hello";//change to select name
 
 
 
@@ -81,22 +82,17 @@ $(".pass").focusin(function(){
         $("#mobile1").remove();
       }
   }
-var iitk="hello";
-var selValue;
-var select = document.getElementById("#institute_name");
-
-
-  
 function chng_holder(){
-  alert("fun");
 $("#institute_name").change(function() {
-   /* var selIndex = select.selectedIndex;
-        selValue = select.options(selIndex).innerHTML;
-        alert("function");
-      if(selValue===iitk){*/
-        alert("IN");
-        $("#usernameDetails").attr("placeholder","enter IITK username");
-     // }
+         var str;
+    $( "#institute_name option:selected" ).each(function() {
+      str = $( this ).text();
+    });
+       
+        
+      if(str===iitk){
+        $("#usrnm").attr("placeholder","enter IITK username");
+      }
   });
 };
 
