@@ -48,8 +48,14 @@ if($_GET['q']==="courseEnq")
 <div>No of lectures a week: <span id="ld"><?php echo $row['lectures']; ?></span></div>  <!-- no of lec display -->
 <div>Lab hours per week: <span id="labd"><?php echo $row['labs']; ?></span></div>  <!-- Lab d display -->
 <div>Tutorials per week: <span id="td"><?php echo $row['tutorials']; ?></span></div>  <!-- tuts display -->
-<div>Course Content: <span id="ccd"><?php echo $row['course_content']; ?></span></div>  <!-- Course content display -->
+<div>Course Content: <span id="ccd" class="longText"><?php echo $row['course_content']; ?></span><p style="display: inline; position: absolute; margin-left: 33rem;" onclick="showtxt()">more</p></div>  <!-- Course content display -->
 </section>
+<script type="text/javascript">
+	function showtxt(){
+		$(".text_disp").animate({height:"20rem", opacity:1},1000);
+	}
+</script>
+<div class="text_disp"><?php echo $row['course_content']; ?></div>
 <?php 
 if($_SESSION['currsem']<=$row['semester'])
 {
@@ -57,9 +63,9 @@ if($_SESSION['currsem']<=$row['semester'])
 	$sql = "SELECT * FROM addedcourses WHERE userid=".$_SESSION['userid']." AND course_id=".$row['course_id'];
 	$res = $conn->query($sql);
 	if($res->num_rows==1)
-		echo "<button style='width=10rem !important; font-size: 1rem !important ; height: 1.5rem !important;';onclick=addrem(".$row['course_id'].",false)>Remove course!</button>";
+		echo "<button  style='color:white; background-color:red; font-weight:bold; margin:1.5rem 0 0 15rem; border-radius:1rem 1rem 0 0; width:15rem; height:2.5rem;' onclick=addrem(".$row['course_id'].",false)>Remove course!</button>";
 	else
-		echo "<button style='width=10rem !important; font-size: 1rem !important ; height: 1.5rem !important;' onclick=addrem(".$row['course_id'].",true)>Add course</button>";
+		echo "<button style='color:white; background-color:green; font-weight:bold; margin:1.5rem 0 0 15rem; border-radius:1rem 1rem 0 0; width:15rem; height:2.5rem;' onclick=addrem(".$row['course_id'].",true)>Add course</button>";
 }
 ?>
 	<?php

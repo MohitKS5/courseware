@@ -31,9 +31,36 @@ h4{
 	border-left:1px groove orange;
 	color: lime;
 }
-.Course_Content {
+#courseenquiry{
+	display: block;
+	position: absolute;
 }
+.Course_Content {
 
+}
+.text_disp{
+	padding: 1.5rem;
+	display: inline-block;
+	position: absolute;
+	z-index: 1000;
+	transform: translate(70rem,-20rem);
+	-webkit-transform:translate(70rem,-20rem);
+	border-radius: 3rem;
+	color: white !important;
+	max-width: 25rem !important;
+	overflow-wrap: break-word;
+	overflow: hidden;
+	height: 0rem;
+	opacity:0;
+	border: 1px groove white;
+	background-color: rgba(0,0,0,.5);
+
+}
+.longText{
+	overflow: hidden;
+	max-width: 20rem;
+	max-height: 1rem !important;	
+}
 .Course_Content div{
 	position: relative;
 	color: yellow;
@@ -96,9 +123,11 @@ li.separator{
 
 
 	}
+.cover:hover{
 
+}
 .cover{
-	background-color:  rgba(255,255,255,0.2);
+	
 	padding: 1rem 0 0 2rem;
 	width:150rem;
 	height: 70rem;

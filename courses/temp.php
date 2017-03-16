@@ -32,8 +32,7 @@ $sql = "SELECT * FROM courses WHERE institute_id=".$_SESSION['instituteid']." AN
  <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-<script type="text/javascript">
-
+<script>
     function scrollto(TO){
       alert(TO);
       $('html, body').animate({
@@ -52,7 +51,8 @@ $sql = "SELECT * FROM courses WHERE institute_id=".$_SESSION['instituteid']." AN
 
 <body>
 <div id="courseenquiry">
-	<div id="queryPane">x
+	<div id="queryPane">
+	Semester
 			<select name="sem" id="sem" onmouseup="loadCourses()" >
 			<option value="1" <?php if($_SESSION['currsem']==1) echo "selected"; ?>>First</option>
 			<option value="2" <?php if($_SESSION['currsem']==2) echo "selected"; ?>>Second</option>
@@ -63,7 +63,7 @@ $sql = "SELECT * FROM courses WHERE institute_id=".$_SESSION['instituteid']." AN
 			<option value="7" <?php if($_SESSION['currsem']==7) echo "selected"; ?>>Seventh</option>
 			<option value="8" <?php if($_SESSION['currsem']==8) echo "selected"; ?>>Eighth</option>
 		</select><br>
-
+		Course
 	
 		<select multiple="" name="course" id="course" onmouseup="loadDetails()">
 

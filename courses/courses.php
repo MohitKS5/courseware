@@ -57,7 +57,7 @@ if(!isset($_SESSION['status']))
       </div>
       <div class="PL PL_base">
         <div class="title fonttitle" id="main_list">Main List</div>
-        <div class="title fonttitle" id="subscript">Navigation</div>
+        <div class="title fonttitle" id="subscript">add/remove courses</div>
       </div>
     </div>
     <!--div id="group4" class="P_group">
