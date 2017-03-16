@@ -1,3 +1,4 @@
+var iitk="hello";//change to select name
 
 
 
@@ -81,11 +82,19 @@ $(".pass").focusin(function(){
         $("#mobile1").remove();
       }
   }
-
-
-
-
-
+function chng_holder(){
+$("#institute_name").change(function() {
+         var str;
+    $( "#institute_name option:selected" ).each(function() {
+      str = $( this ).text();
+    });
+       
+        
+      if(str===iitk){
+        $("#usrnm").attr("placeholder","enter IITK username");
+      }
+  });
+};
 
 
 function openNav() {
@@ -101,7 +110,8 @@ $(document).ready(function() {
   Navbar();
   Fullscreen();
   Sidebar();
-  rembar();
+  chng_holder();
+    rembar();
     // Setup Materialize
  
   $('.parallax').parallax();

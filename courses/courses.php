@@ -12,9 +12,9 @@ if(!isset($_SESSION['status']))
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <!--Let browser know website is optimized for mobile-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--Set title-->
-<title>Code Buddy</title>
+<meta name="viewport" content="width=device-width, initial-scale=0.6">
+<!--Set title fonttitle-->
+<title fonttitle>Code Buddy</title fonttitle>
 <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:500%7CFredoka+One%7CPompiere%7CSource+Code+Pro" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -24,6 +24,15 @@ if(!isset($_SESSION['status']))
  <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<script type="text/javascript">
+
+    function scrollto(TO){
+      alert(TO);
+      $('html, body').animate({
+            'scrollTop' : $($(TO)).position().top,
+        });
+    }
+  </script>
 </head>
 
 <body>
@@ -44,70 +53,42 @@ if(!isset($_SESSION['status']))
     </div>
     <div id="group3" class="P_group">
       <div class="PL PL_fore">
-         <section>
-          <div class="courses_list" id="compulsory_courses">
-          <h4>Compulsory Courses</h4>
-          <ul type="none">
-            <li class="separator">&nbsp</li>
-            <li>-<a href="">mth101</a></li>
-            <li class="separator">&nbsp</li>
-            <li>-<a href="">phy103</a></li>
-            <li class="separator">&nbsp</li>
-            <li style="border:none !important;"><span style="position: absolute; background-color: red; border-left: 1px groove orange; max-height: 1rem; padding-bottom: 2.7rem;"></span>-<a href="">esc101</a></li>
-          </ul>
-          </div>
-        <div id="optional_courses" class="courses_list">
-                <h4>Optional courses Courses</h4>
-          <ul type="none">
-            <li class="separator">&nbsp</li>
-            <li>-<a href="">LOG101</a></li>
-            <li class="separator">&nbsp</li>
-            <li>-<a href="">art106</a></li>
-            <li class="separator">&nbsp</li>
-            <li>-<a href="">soc173</a></li>
-            <li class="separator">&nbsp</li>
-            <li style="border:none !important;"><span style="position: absolute; background-color: red; border-left: 1px groove orange; max-height: 1rem; padding-bottom: 2.7rem;"></span>-<a href="">esc101</a></li>
-          </ul>
-        </div>
-        </section>
+         <iframe src="temp.php" class="cover title"></iframe>
       </div>
       <div class="PL PL_base">
-        <div class="title" id="main_list">Main List</div>
-        <div class="title" id="subscript">Navigation</div>
+        <div class="title fonttitle" id="main_list">Main List</div>
+        <div class="title fonttitle" id="subscript">add/remove courses</div>
       </div>
     </div>
-    <div id="group4" class="P_group">
+    <!--div id="group4" class="P_group">
       <div class="PL PL_base">
-        <div class="title">Base Layer</div>
+        <div class="title fonttitle">Base Layer</div>
       </div>
       <div class="PL PL_back">
-        <div class="title">Background Layer1</div>
+        <div class="title fonttitle">Background Layer1</div>
       </div>
       <div class="PL PL_deep">
-        <div class="title">Deep Background Layer2</div>
+        <div class="title fonttitle">Deep Background Layer2</div>
       </div>
     </div>
     <div id="group5" class="P_group">
       <div class="PL PL_fore">
-        <div class="title">Foreground Layer2</div>
+        <div class="title fonttitle">Foreground Layer2</div>
       </div>
-      <div class="PL PL_base">
-        <div class="title">MTH101</div>
+      <div class="PL PL_base" id="course1">
+        <div class="title fonttitle">MTH101</div>
       </div>
-    </div>
+    </div-->
     <div id="group6" class="P_group">
       <div class="PL PL_back">
-        <div class="title"></div>
-      </div>
-      <div class="PL PL_base">
-        <div class="title">Base Layer3</div>
+        <div class="title fonttitle"></div>
       </div>
     </div>
-    <div id="group7" class="P_group">
+    <!--div id="group7" class="P_group">
       <div class="PL PL_base">
-        <div class="title">Base Layer4</div>
+        <div class="title fonttitle">Base Layer4</div>
       </div>
-    </div>
+    </div-->
   </div>
 
   <script>

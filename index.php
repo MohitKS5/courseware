@@ -27,9 +27,6 @@
 <body class="black">
 
 <div class="fa fa-bars topleft dissolve" onclick="openNav()" id="mobile1"></div>
-<script>
-
-</script>
 
   
   <header class="navbar-fixed dissolve" id="header">
@@ -57,7 +54,7 @@
       </div>
     </nav>
   </header>
-<span id="errmsg" style="display: block; font-size: 5rem; color: red; position: absolute; margin:20rem 0 0 60rem; ">
+<span id="errmsg" style="display: block; font-size: 3rem; color: cyan; font-weight: bold; position: absolute; margin:130rem 0 0 30%; ">
  <?php 
   if(isset($_GET['err']))
   {
@@ -76,7 +73,7 @@
       echo "<span>You have to login before you could continue</span>";
       break;
       case "userpass":
-      echo "Username or password wrong!";
+      echo "<span>Username or password wrong!</span>";
       break;
       default:
       echo ":-D";
@@ -113,45 +110,25 @@
    <button class="submit"><span class="fa fa-lock"></span></button>
   
     <span class="fa fa-user INLINE pad"></span>
-   <input type="text" class="user INLINE" placeholder="Username" name="username"/>
+   <input type="text" class="user INLINE" placeholder="Username" name="username" />
    <span class="fa fa-key INLINE pad2"></span>
    <input type="password" class="pass INLINE" placeholder="password" name="password"/>
  </form>
     </div>
 
     <div id="tab-Signup" class="tab-content">
-      <!--form action="">
-   
-  
-    <span class="fa fa-university INLINE pad2"></span>
-
-   <input type="Institute Name" class="pass INLINE" placeholder="Institute Name"/>
-
-  <span class="fa fa-user INLINE pad"></span>
-
-   <input type="text" class="user INLINE" placeholder="Username"/>
-
-   <span class="fa fa-key INLINE pad2"></span>
-   
-   <input type="password" class="pass INLINE" placeholder="password"/>
-
-   <input
-    </form>-->
+      
 <form action="signup.php" method="post">  
   
   <h2><span class="fa fa-users lime-text"></span> Sign Up</h2>
   <span class="fa fa-user INLINE"></span> 
   <input class="INLINE" type="text" name="name" placeholder="Your name"><br>
-  <span class="fa fa-edit INLINE"></span>
-  <input class="INLINE" type="text" name="username" placeholder="Your preferred username" onkeyup="checkUsername(this.value);"> <span id="usernameDetails"></span><br>
-  <span class="fa fa-key INLINE"></span>
-  <input class="INLINE" type="password" name="password" placeholder="Your password"><br>
-  <span class="fa fa-key INLINE"></span>
-  <input class="INLINE" type="password" name="passwordAgain" placeholder="Your password again"><br>
-  <span class="fa fa-envelope INLINE"></span>
-  <input type="text" class="INLINE" name="email" placeholder="Your email address" onkeyup="validateEmail(this.value);"> <span id="emailDetails"></span><br>
-  <select  name="institute">
-    <?php 
+  
+  <span class="fa fa-university INLINE"></span>
+  <select  name="institute" class="INLINE" id="institute_name">
+  <option>hello</option>
+  <option>buffalo</option>
+    <!--?php 
     $conn = new mysqli("127.0.0.1","root","","codefundo");
     $sql = "SELECT instituteid, name FROM institutes";
     $res = $conn->query($sql);
@@ -162,10 +139,18 @@
       echo "<option value=".$row['instituteid'].">".$row['name']."</option>";
     } 
     $conn->close();
-    ?>
-  </select>
+    ?-->
+  </select><br>
+  <span class="fa fa-edit INLINE"></span>
+  <input class="INLINE" type="text" name="username" placeholder="Your preferred username" id="usrnm" onkeyup="checkUsername(this.value);"> <span id="usernameDetails"></span><br>
+  <span class="fa fa-key INLINE"></span>
+  <input class="INLINE" type="password" name="password" placeholder="Your password"><br>
+  <span class="fa fa-key INLINE"></span>
+  <input class="INLINE" type="password" name="passwordAgain" placeholder="Your password again"><br>
+  <span class="fa fa-envelope INLINE"></span>
+  <input type="text" class="INLINE" name="email" placeholder="Your email address" onkeyup="validateEmail(this.value);"> <span id="emailDetails"></span><br>
   <span class="INLINE" style="font-size: 1.5rem !important">DOB:</span>
-  <input class="INLINE" type="date" name="dob" id="dob">
+  <input class="INLINE" type="date" name="dob" id="dob" placeholder="dd-mm-yy">
   <button class="submit" id="register" type="submit" name="I'm in!" disabled="disabled">I'm in!</button>
   </form>
 
@@ -232,6 +217,9 @@
   <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  
+
+
 </body>
 
 

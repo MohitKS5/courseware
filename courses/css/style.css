@@ -31,21 +31,53 @@ h4{
 	border-left:1px groove orange;
 	color: lime;
 }
+#courseenquiry{
+	display: block;
+	position: absolute;
+}
+.Course_Content {
 
-.courses_list a {
+}
+.text_disp{
+	padding: 1.5rem;
+	display: inline-block;
+	position: absolute;
+	z-index: 1000;
+	transform: translate(70rem,-20rem);
+	-webkit-transform:translate(70rem,-20rem);
+	border-radius: 3rem;
+	color: white !important;
+	max-width: 25rem !important;
+	overflow-wrap: break-word;
+	overflow: hidden;
+	height: 0rem;
+	opacity:0;
+	border: 1px groove white;
+	background-color: rgba(0,0,0,.5);
+
+}
+.longText{
+	overflow: hidden;
+	max-width: 20rem;
+	max-height: 1rem !important;	
+}
+.Course_Content div{
+	position: relative;
+	color: yellow;
+	display: block;
+	margin-top: 2rem;
+	width: 40rem;
+}
+ .Course_Content span{
+ 	float: right;
 	background-color:rgba(0,0,0,0.5);
 	border:1px solid white;
 	border-radius:3rem;
-	padding: 1rem 5rem 1rem 5rem;
+	padding: 0.5rem 5rem 0.5rem 5rem;
 	text-decoration: none;
 	color: lime;
 }
-.courses_list a:hover{
-	text-transform: lowercase;
-	background-color: rgba(0,100,0,.5);
-	color: white;
-	font-size: 3rem;
-}
+	
 
 li.separator{
 	line-height: 2rem !important;
@@ -66,7 +98,10 @@ li.separator{
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-size: 7rem;
+    
+  }
+  .titlefont{
+  	font-size: 7rem;
     color: #9f2;
   }
 
@@ -88,3 +123,20 @@ li.separator{
 
 
 	}
+.cover:hover{
+
+}
+.cover{
+	
+	padding: 1rem 0 0 2rem;
+	width:150rem;
+	height: 70rem;
+	float: left;
+	position: absolute;
+	border:none !important;
+
+}
+
+	
+
+	

@@ -10,14 +10,50 @@ $conn = new mysqli("127.0.0.1","root","","codefundo");
 $sql = "SELECT * FROM courses WHERE institute_id=".$_SESSION['instituteid']." AND semester=".$_SESSION['currsem'];
 
 ?>
-<DOCTYPE html>
-<html>
-<head></head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!--Set charset-->
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Set title-->
+<title>Code Buddy</title>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:500%7CFredoka+One%7CPompiere%7CSource+Code+Pro" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/background_transitions.css" type="text/css" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" type="text/css" href="../css/forms.css">
+ <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<script>
+    function scrollto(TO){
+      alert(TO);
+      $('html, body').animate({
+            'scrollTop' : $($(TO)).position().top,
+        });
+    }
+  </script>
+  
+  <style type="text/css">
+ 		html{
+ 			font-size: 15px !important;
+ 		} 	
+  </style>
+
+</head>
 
 <body>
 <div id="courseenquiry">
 	<div id="queryPane">
-		Semester: <select name="sem" id="sem" onmouseup="loadCourses()">
+	Semester
+			<select name="sem" id="sem" onmouseup="loadCourses()" >
 			<option value="1" <?php if($_SESSION['currsem']==1) echo "selected"; ?>>First</option>
 			<option value="2" <?php if($_SESSION['currsem']==2) echo "selected"; ?>>Second</option>
 			<option value="3" <?php if($_SESSION['currsem']==3) echo "selected"; ?>>Third</option>
@@ -27,18 +63,22 @@ $sql = "SELECT * FROM courses WHERE institute_id=".$_SESSION['instituteid']." AN
 			<option value="7" <?php if($_SESSION['currsem']==7) echo "selected"; ?>>Seventh</option>
 			<option value="8" <?php if($_SESSION['currsem']==8) echo "selected"; ?>>Eighth</option>
 		</select><br>
-
-		Course selected:
-		<select name="course" id="course" onmouseup="loadDetails()">
+		Course
+	
+		<select multiple="" name="course" id="course" onmouseup="loadDetails()">
 
 		</select>
 	</div>
-	<div id="contentPane">
-	</div>
+
+	
+	<section id="contentPane">
+         
+        </section>
+	
 	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 	<script>
 	var xmlhttp = new XMLHttpRequest();
-
+	var len;
 	$(document).ready(function(){
 		loadCourses();
 
@@ -47,6 +87,7 @@ $sql = "SELECT * FROM courses WHERE institute_id=".$_SESSION['instituteid']." AN
 		xmlhttp.onreadystatechange = function() {
 			if(this.status===200 && this.readyState===4) {
 				$("#course").html(this.responseText);
+					getlen();
 				loadDetails();
 			}
 		};
@@ -54,7 +95,13 @@ $sql = "SELECT * FROM courses WHERE institute_id=".$_SESSION['instituteid']." AN
 		xmlhttp.open("GET","enq.php?sem="+sem+"&q=listCourses",true);
 		xmlhttp.send();
 	}
-
+	
+	function getlen(){
+		len = $("#course").children().length+1;
+		console.log(len);
+		$("#course").css("height",2*len+"rem");
+	}
+	
 	function loadDetails() {
 		xmlhttp.onreadystatechange = function() {
 			if(this.status===200 && this.readyState===4) {

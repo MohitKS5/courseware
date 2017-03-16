@@ -152,12 +152,15 @@ blockquote {
 
 /* Stylish hr */
 hr.stylish {
+  position: absolute;
+  margin-top:25%;
   border: none;
   border-bottom: medium double #ffffff;
   border-top: medium double #ffffff;
   color: #c6ff00;
   text-align: center;
   width: 75%;
+  left: 12.5%;
 }
 
 hr.stylish:after {
@@ -167,7 +170,7 @@ hr.stylish:after {
   font-size: 1.9rem;
   padding: 0;
   position: relative;
-  top: -1rem;
+  top: -1.5rem;
 }
 /*End Stylish hr*/
 
