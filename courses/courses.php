@@ -18,7 +18,7 @@ if(!isset($_SESSION['status']))
 <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:500%7CFredoka+One%7CPompiere%7CSource+Code+Pro" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" type="text/css" />
-<link rel="stylesheet" href="css/background_transitions.css" type="text/css" />
+
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen,projection">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
  <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
@@ -36,59 +36,23 @@ if(!isset($_SESSION['status']))
 </head>
 
 <body>
-
-  <div class="debug">
-    <label><input type="checkbox"> Debug</label>
-  </div>
- 
-
-  <div class="parallax">
-    <div id="group2" class="P_group">
-      <div class="PL PL_base">
-        <div class="head1"><span style="font-family: 'Baloo Bhaina', cursive !important; color: orange !important; text-shadow:none;">COURSES</span><BR>Welcome To I Semester Courses</div>
+    <div class="container">
+      <div class="head1"><span style="font-family: 'Baloo Bhaina', cursive !important; color: orange !important; text-shadow:none;">COURSES</span><BR>Welcome To I Semester Courses
       </div>
-      <div class="PL PL_back">
+    </div>
+      
+    
+   <div class="container">
+      <iframe class="cover" src="temp.php"></iframe>
+      <div class="banner">
+        <div class=" fonttitle" id="main_list">Main List
+            <div class="fonttitle" id="subscript">add/remove course</div>
+        </div>
         
       </div>
     </div>
-    <div id="group3" class="P_group">
-      <div class="PL PL_fore">
-         <iframe src="temp.php" class="cover title"></iframe>
-      </div>
-      <div class="PL PL_base">
-        <div class="title fonttitle" id="main_list">Main List</div>
-        <div class="title fonttitle" id="subscript">add/remove courses</div>
-      </div>
-    </div>
-    <!--div id="group4" class="P_group">
-      <div class="PL PL_base">
-        <div class="title fonttitle">Base Layer</div>
-      </div>
-      <div class="PL PL_back">
-        <div class="title fonttitle">Background Layer1</div>
-      </div>
-      <div class="PL PL_deep">
-        <div class="title fonttitle">Deep Background Layer2</div>
-      </div>
-    </div>
-    <div id="group5" class="P_group">
-      <div class="PL PL_fore">
-        <div class="title fonttitle">Foreground Layer2</div>
-      </div>
-      <div class="PL PL_base" id="course1">
-        <div class="title fonttitle">MTH101</div>
-      </div>
-    </div-->
-    <div id="group6" class="P_group">
-      <div class="PL PL_back">
-        <div class="title fonttitle"></div>
-      </div>
-    </div>
-    <!--div id="group7" class="P_group">
-      <div class="PL PL_base">
-        <div class="title fonttitle">Base Layer4</div>
-      </div>
-    </div-->
+    
+        
   </div>
 
   <script>

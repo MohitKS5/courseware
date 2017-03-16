@@ -6,16 +6,14 @@
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    -webkit-perspective: 300px;
-    perspective: 300px;
-  }
+    }
 
   .P_group {
     position: relative;
     height: 500px; /* fallback for older browsers */
     height: 100vh;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+    -webkit-transform-style: ;
+    transform-style: ;
   }
 
   .PL {
@@ -26,29 +24,13 @@
     bottom: 0;
   }
 
-  .PL_fore {
-    -webkit-transform: translateZ(90px) scale(.7);
-    transform: translateZ(90px) scale(.7);
-    z-index: 1;
-  }
+  
 
-  .PL_base {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    z-index: 4;
-  }
+  
 
-  .PL_back {
-    -webkit-transform: translateZ(-900px) scale(4);
-    transform: translateZ(-900px) scale(4);
-    z-index: 3;
-  }
+  
 
-  .PL_deep {
-    -webkit-transform: translateZ(-1500px) scale(9);
-    transform: translateZ(-1500px) scale(9);
-    z-index: 2;
-  }
+  .
 
 
   /* Debugger styles - used to show the effect
@@ -72,10 +54,7 @@
     box-shadow: 0 0 0 2px #000;
     opacity: 0.9;
   }
-  .P_group {
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-  }
+  
 
 
   /* demo styles

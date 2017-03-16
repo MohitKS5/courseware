@@ -48,7 +48,7 @@ if($_GET['q']==="courseEnq")
 <div>No of lectures a week: <span id="ld"><?php echo $row['lectures']; ?></span></div>  <!-- no of lec display -->
 <div>Lab hours per week: <span id="labd"><?php echo $row['labs']; ?></span></div>  <!-- Lab d display -->
 <div>Tutorials per week: <span id="td"><?php echo $row['tutorials']; ?></span></div>  <!-- tuts display -->
-<div>Course Content: <span id="ccd" class="longText"><?php echo $row['course_content']; ?></span><p style="display: inline; position: absolute; margin-left: 33rem;" onclick="showtxt()">more</p></div>  <!-- Course content display -->
+<div>Course Content: <span id="ccd" class="longText"><?php echo $row['course_content']; ?></span><p style="display: inline; position: absolute; margin-left: 33rem;" onclick="showtxt()">click for more!</p></div>  <!-- Course content display -->
 </section>
 <script type="text/javascript">
 	function showtxt(){

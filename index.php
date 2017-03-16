@@ -126,9 +126,8 @@
   
   <span class="fa fa-university INLINE"></span>
   <select  name="institute" class="INLINE" id="institute_name">
-  <option>hello</option>
-  <option>buffalo</option>
-    <!--?php 
+  
+    <?php 
     $conn = new mysqli("127.0.0.1","root","","codefundo");
     $sql = "SELECT instituteid, name FROM institutes";
     $res = $conn->query($sql);
@@ -139,7 +138,7 @@
       echo "<option value=".$row['instituteid'].">".$row['name']."</option>";
     } 
     $conn->close();
-    ?-->
+    ?>
   </select><br>
   <span class="fa fa-edit INLINE"></span>
   <input class="INLINE" type="text" name="username" placeholder="Your preferred username" id="usrnm" onkeyup="checkUsername(this.value);"> <span id="usernameDetails"></span><br>

@@ -49,7 +49,7 @@ $sql = "SELECT * FROM courses WHERE institute_id=".$_SESSION['instituteid']." AN
 
 </head>
 
-<body>
+<body style="background: transparent !important;">
 <div id="courseenquiry">
 	<div id="queryPane">
 	Semester
