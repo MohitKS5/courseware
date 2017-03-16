@@ -129,7 +129,7 @@
   
     <?php 
     $conn = new mysqli("127.0.0.1","root","","codefundo");
-    $sql = "SELECT instituteid, name FROM institutes";
+    $sql = "SELECT * FROM institutes";
     $res = $conn->query($sql);
     for($i=0;$i<$res->num_rows;$i++)
     {
