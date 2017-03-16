@@ -17,8 +17,8 @@ if($_GET['q']==="listCourses")
 	try {
 	$sql = "SELECT * FROM courses WHERE institute_id=".$_SESSION['instituteid']." AND semester=".$_GET['sem'];
 	$res = $conn->query($sql);
-	$row=$res->fetch_array();
-	echo "<option value=".$row['course_id'].">".$row['course_name']."</option>";
+	//$row=$res->fetch_array();
+	//echo "<option value=".$row['course_id'].">".$row['course_name']."</option>";
 	while(($row=$res->fetch_array()))
 	{
 		echo "<option value=".$row['course_id'].">".$row['course_name']."</option>";
@@ -41,13 +41,15 @@ if($_GET['q']==="courseEnq")
 	$row = $res->fetch_array();
 	?>
 
-
+<section class="Course_Content">
 <div>Course Name: <span id="cnd"><?php echo $row['course_name']; ?></span></div>  <!-- Course name display -->
-<div>Course Content: <span id="ccd"><?php echo $row['course_content']; ?></span></div>  <!-- Course content display -->
+
 <div>Reference books: <span id="rbd"><?php echo $row['reference']; ?></span></div>  <!-- Referece books display -->
 <div>No of lectures a week: <span id="ld"><?php echo $row['lectures']; ?></span></div>  <!-- no of lec display -->
 <div>Lab hours per week: <span id="labd"><?php echo $row['labs']; ?></span></div>  <!-- Lab d display -->
 <div>Tutorials per week: <span id="td"><?php echo $row['tutorials']; ?></span></div>  <!-- tuts display -->
+<div>Course Content: <span id="ccd"><?php echo $row['course_content']; ?></span></div>  <!-- Course content display -->
+</section>
 <?php 
 if($_SESSION['currsem']<=$row['semester'])
 {
@@ -55,9 +57,9 @@ if($_SESSION['currsem']<=$row['semester'])
 	$sql = "SELECT * FROM addedcourses WHERE userid=".$_SESSION['userid']." AND course_id=".$row['course_id'];
 	$res = $conn->query($sql);
 	if($res->num_rows==1)
-		echo "<button onclick=addrem(".$row['course_id'].",false)>Remove course!</button>";
+		echo "<button style='width=10rem !important; font-size: 1rem !important ; height: 1.5rem !important;';onclick=addrem(".$row['course_id'].",false)>Remove course!</button>";
 	else
-		echo "<button onclick=addrem(".$row['course_id'].",true)>Add course</button>";
+		echo "<button style='width=10rem !important; font-size: 1rem !important ; height: 1.5rem !important;' onclick=addrem(".$row['course_id'].",true)>Add course</button>";
 }
 ?>
 	<?php

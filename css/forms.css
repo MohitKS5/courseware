@@ -50,13 +50,19 @@ input:focus {
 }
 
 select {
-  font-size: 1rem !important;
+  font-size: 1rem;
   display: block;
   background:transparent;
   border-radius: 3rem;
   width: 22rem;
   height: 3rem;
 }
+option{
+  text-align: center;     
+  padding: 0.5rem;              ;
+  font-size:1.5rem !important;
+}
+
 select:focus, select:active, select:hover{
   background:white;
   color:red; 
