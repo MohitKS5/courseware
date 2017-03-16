@@ -129,13 +129,18 @@
   
     <?php 
     $conn = new mysqli("127.0.0.1","root","","codefundo");
+    $conn = new mysqli("coursebuddy.database.windows.net","msadmin","Cb@12345678","codefundo",1433);
     if(!$conn)die("connection failed");
     $sql = "SELECT * FROM institutes";
     $res = $conn->query($sql);
     if($conn->error)
-      die("query error"); 
+      die("query error");
+    var_dump($conn);
+    var_dump($res);
+    echo "etzsxdcfvgtesdrcftvghbj";
     for($i=0;$i<$res->num_rows;$i++)
     {
+
       $row = $res->fetch_array(MYSQL_ASSOC);
 
       echo "<option value=".$row['instituteid'].">".$row['name']."</option>";
