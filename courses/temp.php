@@ -6,7 +6,7 @@ if(!isset($_SESSION['status']))
 	die;
 }
 
-$conn = new mysqli("127.0.0.1","root","","codefundo");
+$conn = new mysqli("coursebuddy.database.windows.net","msadmin","Cb@12345678","codefundo");
 $sql = "SELECT * FROM courses WHERE institute_id=".$_SESSION['instituteid']." AND semester=".$_SESSION['currsem'];
 
 ?>

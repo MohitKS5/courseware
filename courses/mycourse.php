@@ -12,7 +12,7 @@ if(!isset($_POST['course_id']))
 	die;
 }
 function get_course_name($id) {
-	$conn = new mysqli("127.0.0.1","root","","codefundo");
+	$conn = new mysqli("coursebuddy.database.windows.net","msadmin","Cb@12345678","codefundo");
 	$sql="SELECT * FROM courses where course_id=".$id;
 	$row = $conn->query($sql)->fetch_array();
 	$conn->close();

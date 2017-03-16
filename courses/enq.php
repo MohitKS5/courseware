@@ -11,7 +11,7 @@ if(!isset($_GET['q']))
 	header('location: courses.php');
 	die;
 }
-$conn = new mysqli("127.0.0.1","root","","codefundo");
+$conn = new mysqli("coursebuddy.database.windows.net","msadmin","Cb@12345678","codefundo");
 if($_GET['q']==="listCourses")
 {
 	try {
