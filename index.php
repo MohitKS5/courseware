@@ -133,9 +133,11 @@
     $sql = "SELECT * FROM institutes";
     $res = $conn->query($sql);
     if($conn->error)
-      die("query error"); 
+      die("query error");
+    echo "etzsxdcfvgtesdrcftvghbj";
     for($i=0;$i<$res->num_rows;$i++)
     {
+
       $row = $res->fetch_array(MYSQL_ASSOC);
 
       echo "<option value=".$row['instituteid'].">".$row['name']."</option>";
