@@ -128,9 +128,12 @@ function get_course_name($id) {
 	<button id="submit" value="Done!" onclick="wrapup()">Done</button>
 </div>
 <div id="child"></div>
-<div style="border: 1px solid black;min-height:300px;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div style="border: 1px solid black;min-height:300px;text-align: center;" ondrop="drop(event)" ondragover="allowDrop(event)">
+	Drag and drop your links here.<br>
+	<b>Note:</b> Dont paste files on your computer here! You have to upload them.<br>
+</div><br><br>
 <form action="upload.php" method="post" enctype="multipart/form-data">
-    Select file to upload:(<b>Note</b>: This will remove added links. So save them first.)<br>
+    Select file to upload:(<b>Note</b>: This will remove whatever is in the above box. So save them first.)<br>
     <input type="file" name="fileToUpload" id="fileToUpload">
     <input type="submit" value="Upload file" name="submit">
     <select name="course">
