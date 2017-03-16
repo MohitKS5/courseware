@@ -129,8 +129,11 @@
   
     <?php 
     $conn = new mysqli("coursebuddy.database.windows.net","msadmin","Cb@12345678","codefundo");
+    if(!$conn)die("connection failed");
     $sql = "SELECT * FROM institutes";
     $res = $conn->query($sql);
+    if($conn->error)
+      die("query error");
     for($i=0;$i<$res->num_rows;$i++)
     {
       $row = $res->fetch_array(MYSQL_ASSOC);
