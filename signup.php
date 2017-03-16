@@ -6,6 +6,7 @@ $email = (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL));
 
 $username = false;
 $conn = new mysqli("127.0.0.1","root","","codefundo");
+
 $sql = "SELECT username FROM users WHERE username='".$_POST['username']."'";
 $res = $conn->query($sql);
 $username = ($res->num_rows==0);

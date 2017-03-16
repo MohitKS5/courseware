@@ -1,0 +1,7 @@
+<resource type='lnote' course_id='1'>http://php.net/get-involved</resource>
+<resource type='lnote' course_id='1'>http://stackoverflow.com/documentation</resource>
+<resource type='lnote' course_id='1'>http://stackoverflow.com/questions</resource>
+<resource type='lnote' course_id='1'>https://www.w3schools.com/bootstrap/default.asp</resource>
+<resource type='assignment' course_id='3'>https://www.w3schools.com/bootstrap/default.asp</resource>
+<resource type='assignment' course_id='3'>https://www.w3schools.com/php/default.asp</resource>
+<resource type='prevpaper' course_id='3' name='asdfasdf'>https://www.w3schools.com/bootstrap/default.asp</resource>

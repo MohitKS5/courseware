@@ -129,8 +129,11 @@
   
     <?php 
     $conn = new mysqli("127.0.0.1","root","","codefundo");
-    $sql = "SELECT instituteid, name FROM institutes";
+    if(!$conn)die("connection failed");
+    $sql = "SELECT * FROM institutes";
     $res = $conn->query($sql);
+    if($conn->error)
+      die("query error"); 
     for($i=0;$i<$res->num_rows;$i++)
     {
       $row = $res->fetch_array(MYSQL_ASSOC);
