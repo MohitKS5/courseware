@@ -16,7 +16,7 @@ $conn = new mysqli("127.0.0.1","root","","codefundo");
 
 if($_GET['add']==="true")
 {
-	$sql = "INSERT INTO addedcourses VALUES (".$_SESSION['userid'].",".$_GET['course_id'].")";
+	$sql = "INSERT INTO addedcourses VALUES (".$_SESSION['userid'].",".$_GET['course_id'].",".$_SESSION['currsem'].")";
 	$conn->query($sql);
 }
 else
