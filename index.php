@@ -128,7 +128,7 @@
   <select  name="institute" class="INLINE" id="institute_name">
   
     <?php 
-    $conn = new mysqli("coursebuddy.database.windows.net","msadmin","Cb@12345678","codefundo",1433);
+    $conn = new mysqli("coursebuddy.database.windows.net","msadmin","Cb@112345678","codefundo",1433);
     if(!$conn)die("connection failed");
     $sql = "SELECT * FROM institutes";
     $res = $conn->query($sql);
