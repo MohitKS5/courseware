@@ -128,8 +128,8 @@
   <select  name="institute" class="INLINE" id="institute_name">
   
     <?php 
-    $conn = new mysqli("http://us-cdbr-azure-southcentral-f.cloudapp.net/","b7603cbccbf2d5","49d472d0","codefundo");
-    $conn = new mysqli("http://us-cdbr-azure-southcentral-f.cloudapp.net/","b7603cbccbf2d5","49d472d0","codefundo");
+    $conn = new mysqli("us-cdbr-azure-southcentral-f.cloudapp.net/","b7603cbccbf2d5","49d472d0","codefundo");
+    $conn = new mysqli("us-cdbr-azure-southcentral-f.cloudapp.net/","b7603cbccbf2d5","49d472d0","codefundo");
     if(!$conn)die("connection failed");
     $sql = "SELECT * FROM institutes";
     $res = $conn->query($sql);
