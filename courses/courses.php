@@ -46,11 +46,12 @@ if(!isset($_SESSION['status']))
       <iframe class="cover" src="temp.php"></iframe>
       <div class="banner">
         <div class=" fonttitle" id="main_list">Main List
-            <div class="fonttitle" id="subscript">add/remove course</div>
+            <div class="fonttitle" id="subscript">add/remove courses</div>
         </div>
         
       </div>
     </div>
+    <a href="dumpwindow.php" target="_blank" style="font-size: 4rem; margin-left: 50rem; color: yellow;">ADD RESOURCE LINK TO COURSES</a>
     
         
   </div>
