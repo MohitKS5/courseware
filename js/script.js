@@ -1,6 +1,6 @@
-var iitk="hello";//change to select name
+var iitk="Indian Institute of Technology, Kanpur";//change to select institute_name
 
-
+//AUTHOR Mohit
 
 
 function Navbar() {

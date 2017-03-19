@@ -42,8 +42,8 @@ if(!isset($_SESSION['status'])) {
           <ul id="menu" type="none" class="top">
             <li><a class="smoothscroll" href="#sec1">ME</a></li>
             <li><a  href="../courses/courses.php" class="">Courses</a></li>
-            <li><a class="smoothscroll" href="#sec3">Forum</a></li>
-            <li><a class="smoothscroll" href="#sec4">Screen Reader</a></li>
+            <li><a class="smoothscroll" href="error404.php">Forum</a></li>
+            <li><a class="smoothscroll" href="error404.php">Screen Reader</a></li>
           </ul>
       </div>
       </header>
