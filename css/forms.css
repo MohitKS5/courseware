@@ -1,4 +1,4 @@
-f/*---------------------forms----------------------*/
+/*---------------------forms----------------------*/
 
 
 h2 {
@@ -141,6 +141,7 @@ input:focus::-webkit-input-placeholder {
     -webkit-transform: translate(0,-2rem);
   }
 
+
   /*-------error msgs -----------*/
   #emailDetails, #usernameDetails{
     color: cyan;
@@ -151,4 +152,3 @@ input:focus::-webkit-input-placeholder {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 2rem;
-  }

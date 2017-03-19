@@ -11,7 +11,7 @@ if(!isset($_POST['newPass']))
 	die ("");															//TODO the html to return if the user trespasses
 }
 
-$conn = new mysqli("127.0.0.1","root","","codefundo");
+    $conn = new mysqli("us-cdbr-azure-southcentral-f.cloudapp.net","b7603cbccbf2d5","49d472d0","codefundo");
 
 $sql = "SELECT * FROM users WHERE username='".$_SESSION['username']."' AND password='".$_POST['currPass']."'";
 
