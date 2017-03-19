@@ -140,3 +140,8 @@ input:focus::-webkit-input-placeholder {
     height: 200vh;
     -webkit-transform: translate(0,-2rem);
   }
+
+  .Signup span {
+    font-size: 2rem;
+    color: orange;
+  }
