@@ -118,7 +118,7 @@
 
     <div id="tab-Signup" class="tab-content">
       
-<form action="signup.php" method="post">  
+<form action="signup.php" method="post" class="Signup">  
   
   <h2><span class="fa fa-users lime-text"></span> Sign Up</h2>
   <span class="fa fa-user INLINE"></span> 
