@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['status']))
- // header("location: ../index.php");
+header("location: ../index.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -56,14 +56,7 @@ if(!isset($_SESSION['status']))
         
   </div>
 
-  <script>
-    var debugInput = document.querySelector("input");
-    function updateDebugState() {
-        document.body.classList.toggle('debug-on', debugInput.checked);
-    }
-    debugInput.addEventListener("click", updateDebugState);
-    updateDebugState();
-  </script>
+ 
 
  
 </body>
