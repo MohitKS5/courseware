@@ -13,7 +13,7 @@ if(!isset($_GET['add']) || !isset($_GET['course_id']))
 	die;
 }
 
-$conn = new mysqli("127.0.0.1","root","","codefundo");
+    $conn = new mysqli("us-cdbr-azure-southcentral-f.cloudapp.net","b7603cbccbf2d5","49d472d0","codefundo");
 
 if($_GET['add']==="true")
 {

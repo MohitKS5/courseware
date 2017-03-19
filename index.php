@@ -118,7 +118,7 @@
 
     <div id="tab-Signup" class="tab-content">
       
-<form action="signup.php" method="post">  
+<form action="signup.php" method="post" class="Signup">  
   
   <h2><span class="fa fa-users lime-text"></span> Sign Up</h2>
   <span class="fa fa-user INLINE"></span> 
@@ -128,8 +128,7 @@
   <select  name="institute" class="INLINE" id="institute_name">
   
     <?php 
-    $conn = new mysqli("127.0.0.1","root","","codefundo");
-    $conn = new mysqli("coursebuddy.database.windows.net","msadmin","Cb@12345678","codefundo",1433);
+    $conn = new mysqli("us-cdbr-azure-southcentral-f.cloudapp.net","b7603cbccbf2d5","49d472d0","codefundo");
     if(!$conn)die("connection failed");
     $sql = "SELECT * FROM institutes";
     $res = $conn->query($sql);

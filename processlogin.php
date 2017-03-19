@@ -26,7 +26,7 @@ $password = $_POST['password'];
 
 //DB operations
 
-$conn = new mysqli("coursebuddy.database.windows.net","msadmin","Cb@12345678","codefundo");
+    $conn = new mysqli("us-cdbr-azure-southcentral-f.cloudapp.net","b7603cbccbf2d5","49d472d0","codefundo");
 $sql = "SELECT * FROM users WHERE username='".$username."' AND password='".$password."'";
 
 $res = $conn->query($sql);
