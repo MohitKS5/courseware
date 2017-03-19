@@ -3,7 +3,7 @@ session_start();
 if(!isset($_SESSION['status']))
 {
 	//header('location: ../index.php?err=restricted');
-	die;
+	//die;
 }
 
 $conn = new mysqli("127.0.0.1","root","","codefundo");
