@@ -1,4 +1,7 @@
 <?php
+/* Front end by Mohit
+ * Backend by Pardhu
+*/
 session_start();
 if(!isset($POST['email']))
 	header("Location: index.php");
