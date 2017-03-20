@@ -37,7 +37,7 @@ header("location: ../index.php");
 
 <body>
     <div class="container">
-      <div class="head1"><span style="font-family: 'Baloo Bhaina', cursive !important; color: orange !important; text-shadow:none;">COURSES</span><BR>Welcome To I Semester Courses
+      <div class="head1"><span style="font-family: 'Baloo Bhaina', cursive !important; color: orange !important; text-shadow:none;">COURSES</span><BR>Welcome To Semester Courses
       </div>
     </div>
       

@@ -291,6 +291,13 @@ hr.stylish:after {
   border: none;
 }
 
+#tab-about ,#tab-suport {
+  text-align: center;
+  width: 100%;
+  color: white !important;
+  font-size: 3rem;
+}
+
 
 
 /*---------------------forms----------------------*/

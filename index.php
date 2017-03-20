@@ -108,13 +108,23 @@
   <form action="processlogin.php" method="post">
    <h2><span class="fa fa-users lime-text"></span> Login</h2>
    <button class="submit"><span class="fa fa-lock"></span></button>
-  
-    <span class="fa fa-user INLINE pad"></span>
+   <span class="fa fa-user INLINE pad"></span>
    <input type="text" class="user INLINE" placeholder="Username" name="username" />
    <span class="fa fa-key INLINE pad2"></span>
    <input type="password" class="pass INLINE" placeholder="password" name="password"/>
  </form>
     </div>
+
+  <div id="tab-about" class="tab-content">
+    <p style="color: yellow; font-size: 5rem">The app is designed to help students :</p>
+    <p> > select electives/optional courses </p>
+    <p> > manage the resourses in them.</p>
+    <p style="color: lime;">To Add your institute added send a short email to <a href="mailto:mohitkumarsingh907@gmail.com,mohitks@iitk.ac.in,pardhu@iitk.ac.in">contributors.</a></p>
+  </div>
+
+  <div id="tab-suport" class="tab-content">
+  <p>The <a href="">Documentation</a>and <a href="">Video </a>are availavle for help.</p>  
+  </div>
 
     <div id="tab-Signup" class="tab-content">
       
