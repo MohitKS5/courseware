@@ -4,6 +4,9 @@ html{
 }
 body{
 	font-family: 'Arima Madurai', cursive !important;
+	 background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/book2.jpeg');
+  	background-size: cover;
+  	background-attachment: fixed;
 }
 .courses_list{
 	z-index: 1000 !important;
@@ -87,8 +90,8 @@ li.separator{
 }
 #subscript{
 	font-size: 4rem;
-	top: 30%;
 	left: 55%;
+	transform: translate(4rem,-5rem);
 }
 /* centre the content in the parallax layers */
   .title {
@@ -137,6 +140,37 @@ li.separator{
 
 }
 
+.title {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 7rem;
+    color: #98ff35
+  }
+
+  .demo__info {
+    position: absolute;
+    z-index:100;
+    bottom: 1vh;
+    top: auto;
+    font-size:80%;
+    text-align:center;
+    width: 100%;
+  }
+  .banner{
+  	font-size: 7rem;
+  	color: orange;
+  	margin:3% 8% 0 0;
+  	float: right;
+  }
+
+  .container{
+  	height: 100vh;
+  	width: 100vw;
+  }
 	
 
 	

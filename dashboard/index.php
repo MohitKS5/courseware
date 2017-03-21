@@ -15,7 +15,7 @@ if(!isset($_SESSION['status'])) {
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--Set title-->
-<title>Code Buddy</title>
+<title>Course Buddy</title>
 <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:500%7CFredoka+One%7CPompiere%7CSource+Code+Pro" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css" type="text/css" />
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen,projection">
@@ -42,8 +42,8 @@ if(!isset($_SESSION['status'])) {
           <ul id="menu" type="none" class="top">
             <li><a class="smoothscroll" href="#sec1">ME</a></li>
             <li><a  href="../courses/courses.php" class="">Courses</a></li>
-            <li><a class="smoothscroll" href="#sec3">Forum</a></li>
-            <li><a class="smoothscroll" href="#sec4">Screen Reader</a></li>
+            <li><a class="smoothscroll" href="error404.php">Forum</a></li>
+            <li><a class="smoothscroll" href="error404.php">Screen Reader</a></li>
           </ul>
       </div>
       </header>
@@ -53,7 +53,7 @@ if(!isset($_SESSION['status'])) {
                 <ul >
                                <li><a href="index.php">Home</a></li>
                                <li><a href="subfiles/change_password.php" target="mainframe">Change Password</a></li>
-                               <li><a href="#">My files</a></li>
+                               <li><a href="../courses/myfiles.php">My files</a></li>
                                <li><a href="../logout.php"> Log out</a></li>
                               </ul>
                             </div>

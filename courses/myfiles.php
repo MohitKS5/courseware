@@ -16,7 +16,7 @@ function get_course_name($id) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>cloud my files</title>
+	<title></title>
 </head>
 <body>
 <form action="mycourse.php" method="post">

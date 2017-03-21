@@ -1,4 +1,4 @@
-f/*---------------------forms----------------------*/
+/*---------------------forms----------------------*/
 
 
 h2 {
@@ -141,7 +141,14 @@ input:focus::-webkit-input-placeholder {
     -webkit-transform: translate(0,-2rem);
   }
 
-  .Signup span {
+
+  /*-------error msgs -----------*/
+  #emailDetails, #usernameDetails{
+    color: cyan;
+    position: absolute;
+    display: inline !important;
+    width: 100rem;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
     font-size: 2rem;
-    color: orange;
-  }

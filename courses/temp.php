@@ -3,7 +3,7 @@ session_start();
 if(!isset($_SESSION['status']))
 {
 	//header('location: ../index.php?err=restricted');
-	die;
+	//die;
 }
 
     $conn = new mysqli("us-cdbr-azure-southcentral-f.cloudapp.net","b7603cbccbf2d5","49d472d0","codefundo");
@@ -49,7 +49,7 @@ $sql = "SELECT * FROM courses WHERE institute_id=".$_SESSION['instituteid']." AN
 
 </head>
 
-<body>
+<body style="background: transparent !important;">
 <div id="courseenquiry">
 	<div id="queryPane">
 	Semester
