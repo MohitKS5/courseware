@@ -33,6 +33,7 @@ foreach($resources->resource as $res)
 		<div>
 		Name: <?php echo $res["name"]; ?>
 		Type: <?php echo $res["type"];?>
+		<a href="<?php echo $res[0]; ?>">GO!</a>
 		</div>
 		<?php
 	}

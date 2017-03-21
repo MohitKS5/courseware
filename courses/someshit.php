@@ -25,10 +25,10 @@ function get_course_name($id) {
 		$sql="SELECT * FROM addedcourses where userid=".$_SESSION['userid'];
 		$res = $conn->query($sql);
 		$row=$res->fetch_array(MYSQL_ASSOC);
-		echo "<div><input type='radio'  value=".$row['course_id']." checked>".get_course_name($row['course_id'])."</div>";
+		echo "<div><input type='radio'  value=".$row['course_id']." name='course_id' checked>".get_course_name($row['course_id'])."</div>";
 		while(($row=$res->fetch_array(MYSQL_ASSOC)))
 		{
-			echo "<div><input type='radio' value=".$row['course_id'].">".get_course_name($row['course_id'])."</div>";
+			echo "<div><input type='radio' value=".$row['course_id']." name='course_id'>".get_course_name($row['course_id'])."</div>";
 		}
 		$conn->close();
 ?>

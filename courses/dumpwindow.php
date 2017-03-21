@@ -137,10 +137,13 @@ function get_course_name($id) {
 </div><br><br>
 <form action="upload.php" method="post" enctype="multipart/form-data">
     Select file to upload:(<b>Note</b>: This will remove whatever is in the above box. So save them first.)<br>
+
     <input type="file" name="fileToUpload" id="fileToUpload" class="browse">
     <input type="submit" value="Upload file" name="submit" class="submit">
     <select name="course" class="selectcourse">
     	<?php
+
+
 		while(($row=$res->fetch_array(MYSQL_ASSOC)))
 		{
 			echo "<option value=".$row['course_id']." selected>".get_course_name($row['course_id'])."</option>";
