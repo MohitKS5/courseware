@@ -43,7 +43,7 @@ if(file_exists($_SESSION['username']."/".get_course_name($_POST['course_id'])))
 {
 	$dir = opendir($_SESSION['username']."/".get_course_name($_POST['course_id']));
 	    while (false !== ($entry = readdir($dir))) {
-        echo "<div><a href='".$entry."'>$entry</a><br></div>";
+        echo "<div><a href='".$entry."' target='_blank'>$entry</a><br></div>";
     }
 }
 ?>
