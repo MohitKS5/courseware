@@ -16,7 +16,9 @@ function get_course_name($id) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+<link rel="stylesheet" type="text/css" href="css/dumpstyle.css">
+</style>
+	<title>My files</title>
 </head>
 <body>
 <form action="mycourse.php" method="post">
@@ -32,7 +34,7 @@ function get_course_name($id) {
 		}
 		$conn->close();
 ?>
-<input type="submit">
+<input type="submit" class="submit">
 </form>
 </body>
 </html>

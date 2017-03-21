@@ -29,10 +29,13 @@ foreach($resources->resource as $res)
 	if($res['course_id']==$_POST['course_id'])
 	{
 			?>
-		<div>
-		Name: <?php echo $res["name"]; ?>
-		Type: <?php echo $res["type"];?>
-		<a href="<?php echo $res[0]; ?>" target="_blank">GO!</a>
+		<div style="color: cyan; font-size: 1rem; background-color: rgba(255,255,255,0.8); border-radius: 2rem 0 2rem 0; border:2px groove red; max-width: 30rem;">
+		<ul type="disc">
+		<li>Name: <?php echo $res["name"]; ?><br>
+		Type: <?php echo $res["type"];?><br>
+		<a href="<?php echo $res[0]; ?>" target="_blank" style="width: 2rem; background-color: green; text-decoration: none; border-radius: 1rem; color: yellow; width: 5rem; font-size: 2rem;">GO!</a><br>
+		</li>
+		</ul>
 		</div>
 		<?php
 	}
