@@ -53,7 +53,7 @@ if(!isset($_SESSION['status'])) {
                 <ul >
                                <li><a href="index.php">Home</a></li>
                                <li><a href="subfiles/change_password.php" target="mainframe">Change Password</a></li>
-                               <li><a href="../courses/myfiles.php">My files</a></li>
+                               <li><a href="../courses/myfiles.php" target="mainframe">My files</a></li>
                                <li><a href="../logout.php"> Log out</a></li>
                               </ul>
                             </div>
