@@ -28,12 +28,11 @@ foreach($resources->resource as $res)
 {
 	if($res['course_id']==$_POST['course_id'])
 	{
-		var_dump($res);
-		?>
+			?>
 		<div>
 		Name: <?php echo $res["name"]; ?>
 		Type: <?php echo $res["type"];?>
-		<a href="<?php echo $res[0]; ?>">GO!</a>
+		<a href="<?php echo $res[0]; ?>" target="_blank">GO!</a>
 		</div>
 		<?php
 	}
