@@ -15,7 +15,7 @@ if(!isset($_SESSION['status'])) {
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--Set title-->
-<title>Code Buddy</title>
+<title>Course Buddy</title>
 <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:500%7CFredoka+One%7CPompiere%7CSource+Code+Pro" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css" type="text/css" />
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen,projection">
